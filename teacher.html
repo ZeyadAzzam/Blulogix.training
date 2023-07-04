@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>parent Page</title>
+    <title>Teacher</title>
 
     <style>
-      body {
+
+body {
             margin: 0;
             padding: 0;
+            
         }
 
         .navbar {
@@ -48,14 +50,20 @@
             padding: 10px;
         }
 
-        h2 {
-        border-left: 2px solid red;
-        padding: 4px;
-        color: rgb(9, 105, 105);
-        margin-left: 0.5rem;
+        .container {
+            display: flex;
+            flex-wrap: wrap;
         }
 
-   table {
+      
+         h2 {
+        border-left: 2px solid red;
+        padding: 5px;
+        color: rgb(9, 105, 105);
+        margin-left: 10px;
+        }
+
+        table {
 
   border: 0.5px solid rgb(13, 153, 178);
 
@@ -73,7 +81,7 @@
      color: #006a6e;
      }
 
-     .btnadd {
+      .btnadd {
 
       background-color: #ef5e4a;
       color: white;
@@ -84,7 +92,7 @@
       
      }
 
-      footer {
+        footer {
             background-color: darkcyan;
             padding: 5px;
             text-align: center;
@@ -92,55 +100,77 @@
             left: 0;
             bottom: 0;
             width: 100%;
-         }
+        }
 
-         footer a {
+        footer a {
             font-weight: bold;
             color: white;
             text-decoration: none;
-         }
+        }
 
 
 
     </style>
 </head>
-
 <body>
 
-  <nav class="navbar">
+     <!-- navagation bar  -->
 
-    <a href="Home.html"><i class="fa-solid fa-gauge" ></i>Dashboard</a>
+     <nav class="navbar">
 
-    <a href="parent.html"><i class="fa-solid fa-people-roof"></i> Parent</a>
+        <a href="Home.html"><i class="fa-solid fa-gauge" ></i>Dashboard</a>
 
-    <a href="teacher.html"><i class="fas fa-chalkboard-teacher"></i>Teacher</a>
-  
-    <a href="#student"><i class="fa-solid fa-book-open-reader"></i>Student </a>
-   
-    <a href="Admin.html"><i class="fa-solid fa-user-gear"></i>Admin</a>
+        <a href="parent.html"><i class="fa-solid fa-people-roof"></i> Parent</a>
 
-    <a class="logoutbtn" href="index.html"><i class="fas fa-sign-out-alt"></i>Logout</a>
+        <a href="teacher.html"><i class="fas fa-chalkboard-teacher"></i>Teacher</a>
+      
+        <a href="#student"><i class="fa-solid fa-book-open-reader"></i>Student </a>
+       
+        <a href="Admin.html"><i class="fa-solid fa-user-gear"></i>Admin</a>
 
-</nav>
-   
-    <h2>parent</h2>
+        <a class="logoutbtn" href="index.html"><i class="fas fa-sign-out-alt"></i>Logout</a>
+
+    </nav>
+       
+
+    <h2>Teacher</h2>
 
     <table style="width: 100%;">
- <tr>
- <th>ID</th>
- <th>First Name</th>
- <th>Last Name</th>
-  <th>Phone Number</th>
+  <tr>
+  <th>ID</th>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Email</th>
   <th> Address</th>
+  <th> CLass</th>
+  <th> Meterial</th>
   <th> Action</th>
-</tr>
+  </tr>
 
-<tr>
+  <tr>
     <td>1</td>
     <td>Ziad</td>
     <td>ob</td>
-    <td>+08796666</td>
-    <td>irbid</td>
+    <td>zack@hotmail.com</td>
+    <td>irbid,USA</td>
+    <td>C</td>
+    <td>java</td>
+    <td style="text-align: center;">
+      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
+          Delete <i class="fas fa-trash" style="color: #ffffff;">
+          </i>
+      </span>
+  </td>
+
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>khaled</td>
+    <td>mohammad</td>
+    <td>zeko@gmail.com</td>
+    <td>New jersy , USA</td>
+    <td>A</td>
+    <td>C#</td>
     <td style="text-align: center;">
       <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
           Delete <i class="fas fa-trash" style="color: #ffffff;">
@@ -150,11 +180,44 @@
   </tr>
 
   <tr>
+    <td>3</td>
+    <td>saed</td>
+    <td>ahmad</td>
+    <td>saed@mai.ru</td>
+    <td>mafraq,jordan</td>
+    <td>E</td>
+    <td>Pyhon</td>
+    <td style="text-align: center;">
+      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
+          Delete <i class="fas fa-trash" style="color: #ffffff;">
+          </i>
+      </span>
+  </td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td>abdallah</td>
+    <td>ali</td>
+    <td>abdallah@gmail.com</td>
+    <td>fo3ara, jordan</td>
+    <td>D</td>
+    <td>C++</td>
+    <td style="text-align: center;">
+      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
+          Delete <i class="fas fa-trash" style="color: #ffffff;">
+          </i>
+      </span>
+  </td>
+  </tr>
+  <tr>
     <td>5</td>
-    <td>john</td>
-    <td>Doe</td>
-    <td>+972622928</td>
-    <td>New York</td>
+    <td>Rama</td>
+    <td>Shara'</td>
+    <td>Rama@mail.ru</td>
+    <td>Ramtha</td>
+    <td>A</td>
+    <td>Ruby</td>
     <td style="text-align: center;">
       <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
           Delete <i class="fas fa-trash" style="color: #ffffff;">
@@ -165,10 +228,12 @@
 
   <tr>
     <td>6</td>
-    <td>test</td>
-    <td>nah</td>
-    <td>+127287287</td>
-    <td>mafraq</td>
+    <td>Test</td>
+    <td>Al-Test</td>
+    <td>test@gmail.com</td>
+    <td>test,jordan</td>
+    <td>B</td>
+    <td>PHP</td>
     <td style="text-align: center;">
       <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
           Delete <i class="fas fa-trash" style="color: #ffffff;">
@@ -180,29 +245,45 @@
   <tr>
     <td>7</td>
     <td>hiba</td>
-    <td>azzam</td>
-    <td>+9972892828</td>
-    <td>Zarqa</td>
-    
+    <td>takrouri</td>
+    <td>hiba@gmail.com</td>
+    <td>mafraq,jordan</td>
+    <td>C</td>
+    <td>HTML,Css</td>
     <td style="text-align: center;">
       <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
           Delete <i class="fas fa-trash" style="color: #ffffff;">
           </i>
       </span>
   </td>
-  
-    </tr>
+  </tr>
+
+  <tr>
+    <td>8</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td style="text-align: center;">
+      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
+          Delete <i class="fas fa-trash" style="color: #ffffff;">
+          </i>
+      </span>
+  </td>
+  </tr>
 
     </table>
 
     <button class="btnadd"><i class="fa-solid fa-plus" style="float: left;"></i> Add </button>
 
+    
 </body>
-
 <footer> 
-  <a style="border-right: 2px solid rgb(255, 255, 255); padding:3px;">Contact us</a>  
-  <a>About us</a>
-  <p style="color: #ffffff; font-weight: bold;">&copy; 2023 BluLogix, LLC. All rights reserved.</p>
+    <a style="border-right: 2px solid rgb(255, 255, 255); padding:3px;">Contact us</a>  
+    <a>About us</a>
+    <p style="color: #ffffff; font-weight: bold;">&copy; 2023 BluLogix, LLC. All rights reserved.</p>
 </footer>
 
 <script src="https://kit.fontawesome.com/1e4272720a.js" crossorigin="anonymous"></script>
