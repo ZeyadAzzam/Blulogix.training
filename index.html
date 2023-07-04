@@ -5,6 +5,11 @@
 
   <style>
 
+body {
+            margin: 0;
+            padding: 0;
+        }
+
 .title{
   margin: auto;
   width: 50%;
@@ -14,7 +19,7 @@
 }
 .title i{
   font-size: 6rem;
-  margin-left: 17rem;
+  margin-left: 18rem;
   
 
 }
@@ -29,8 +34,9 @@
   width: 30rem;
       height: 15rem;
       outline: solid 2px rgb(122, 122, 122);
-      justify-content: center;
+      justify-content: left;
       display: flex;
+      padding-left: 2rem;
 }
 .container h3 {
 
@@ -39,18 +45,19 @@
 
 .container label {
   color: rgb(0, 102, 102);
+  font-weight: bold;
 }
 .container input[type="text"],
 .container input[type="password"] {
-  border-color: rgb(171, 180, 180);
+  border-color: rgb(221, 221, 221);
   height: 1.5rem;
-  border-top: none;
-  border-left: none;
+  width: 100%;
+  
 }
 .container button{
   background-color: rgb(255, 60, 60);
   color: white;
-  width: 6rem;
+  width: 7rem;
   height: 2rem;
   
 }
@@ -76,7 +83,7 @@
 <label>Password</label><br>
 <input type="password" name="Password"><br><br>
 
-<button type="submit"><i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i>Login</button>
+<button type="submit"><i class="fa-solid fa-right-to-bracket" style="color: #ffffff; padding: 8px;"></i>Login</button>
 
 
   </form>
