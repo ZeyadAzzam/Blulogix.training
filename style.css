@@ -43,8 +43,7 @@ color: #009688;
 color: #009688;
 font-weight: bold;
 }
-.container input[type="text"],
-.container input[type="password"] {
+.container input{
     width: 95%;
     padding: 12px 20px;
     margin: 1px 0;
@@ -56,8 +55,7 @@ font-weight: bold;
 
 }
 
-.container input[type="text"]:focus,
-.container input[type="password"]:focus {
+.container input:focus {
 
     border: none;
     border: 2px solid rgb(137, 202, 224);

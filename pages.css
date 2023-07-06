@@ -7,41 +7,46 @@ body {
 .navbar {
     background-color:#00968b;
     display: flex;
-    justify-content:space-between;
+
 }
 
 .navbar a {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    margin-right: 4rem;
+    padding: 0.4rem 2.9rem;
     color: white;
     text-decoration: none;
     justify-content: center;
     align-items: center;
 }
 
-.navbar a:hover {
-    background-color: #fa3c3c;
-    scale: 1.1;
-}
 
 .navbar i {
     margin-bottom: 5px;
     font-size: 1.5rem;
-    padding: 8px;
+    padding: 12px;
     border-radius: 50%;
     background-color:#1aa197; 
 }
     .navbar .logoutbtn {
-    margin-left: auto;
+    margin: 0 1.2rem 0 auto;
     background: none;
     color: #f2f2f2;
     cursor: pointer;
     display: right;
     align-items: center;
-    padding: 10px;
 }
+
+.navbar a:hover {
+    background-color: #ef5e4a;
+    border-bottom: 4px solid #00968b;
+    scale: 1.1;
+}
+
+.navbar a:hover > i {
+    background-color: #f16e5c;
+}
+
 
 .container {
     display: flex;
@@ -49,7 +54,7 @@ body {
 }
 
  h3 {
-border-left: 2px solid red;
+border-left: 3px solid red;
 padding: 4px;
 color: rgb(9, 105, 105);
 margin-left: 1rem;
@@ -84,8 +89,8 @@ font-size: 1.5rem;
 
 
  h2 {
-border-left: 2px solid red;
-padding: 5px;
+border-left: 3px solid red;
+padding: 4px;
 color: rgb(9, 105, 105);
 float: left;
 margin-left: 10px;
@@ -131,7 +136,8 @@ outline: none;
 
 }
 
-.addparent {
+/* Add parent fieldset */
+.add-parent {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -144,36 +150,88 @@ outline: none;
     
   }
   
-  .addparent label {
+  .add-parent label {
     color: #009dae;
 
   }
   
-  .addparent form {
+  .add-parent form {
     width: 100%;
     flex-wrap: wrap;
   }
   
-  .addparent div {
+  .add-parent div {
     width: 40%;
     display: inline-block;
   }
   
-  .addparent input[type="text"],
-  .addparent input[type="tel"] {
+  .add-parent input {
     width: 90%;
   padding: 10px;
   margin: 0 0 10px 0;
   border: 1px solid rgba(207, 205, 205, 0.5);
   box-sizing: border-box;
   height: 2rem; 
+  outline: none;
 
   } 
+
+  .add-parent input:focus {
+
+    border: 2px solid rgb(137, 202, 224);
+  }
+
+  /* Add admin fieldset */
+.add-admin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    border: 1px solid #eaedef;
+    padding: 1rem;
+  
+  }
+  
+  .add-admin label {
+    color: #009dae;
+    font-weight: bold;
+    font-size: 13px;
+
+  }
+  
+  .add-admin form {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .add-admin div {
+    width: 25%;
+    display: inline-block;
+  }
+  
+.add-admin input {
+
+  width: 90%;
+  padding: 10px;
+  margin: 0 0 10px 0;
+  border: 1px solid rgba(207, 205, 205, 0.5);
+  box-sizing: border-box;
+  height: 2rem; 
+  outline: none;
+
+  } 
+
+  .add-admin input:focus {
+
+    border: 2px solid rgb(137, 202, 224);
+  }
    
- 
+
 footer {
     background-color:#00968b;
-    padding: 5px;
+    padding: 1px;
     text-align: center;
     position:fixed;
     left: 0;
