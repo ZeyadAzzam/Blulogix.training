@@ -49,12 +49,13 @@ body {
     background-color: #f16e5c;
 }
 
+/* active page navbar a */
 .navbar a.active {
   background-color: #ef5e4a;
   border-bottom: 4px solid #00968b;
   scale: 1.1;
 }
-
+/* active */
 .navbar a.active > i {
   background-color: #f16e5c;
 }
@@ -93,6 +94,7 @@ font-size: 1.3rem;
 
 }
 
+/* dashboards card */
 .card i {
     display: block;
     font-size: 2.5rem;
@@ -434,4 +436,8 @@ footer a {
     color: white;
     text-decoration: none;
 }
+
+
+
+
 
