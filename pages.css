@@ -4,6 +4,8 @@ body {
     
 }
 
+/* navbar edit */
+
 .navbar {
     background-color:#00968b;
     display: flex;
@@ -47,41 +49,56 @@ body {
     background-color: #f16e5c;
 }
 
+.navbar a.active {
+  background-color: #ef5e4a;
+  border-bottom: 4px solid #00968b;
+  scale: 1.1;
+}
+
+.navbar a.active > i {
+  background-color: #f16e5c;
+}
+
+/* container dashboard edit */
 
 .container {
     display: flex;
     flex-wrap: wrap;
 }
 
- h3 {
-border-left: 3px solid red;
-padding: 4px;
-color: rgb(9, 105, 105);
-margin-left: 1rem;
-font-size: 1.5rem;
+/* h3 edit */
+
+h3 {
+border-left: 2.5px solid #e5533e;
+padding: 3px;
+color: #008c7e;
+margin: 2rem 1rem 1rem 0.7rem;
+font-size: 1.3rem;
 }
 
-.containers {
-    width: 25%;
+/* containers dashboard edit */
+
+.container .card {
+    width: 19rem;
     height: 5.5rem;
-    background-color: #ffffff;
-    border-left: 0.05px solid #cfcfcf;
+    border-top: 3px solid #ee543f;
     border-right: 0.05px solid#cfcfcf ;
     border-bottom: 0.05px solid#cfcfcf;
-    border-top: 3px solid red;
-    box-shadow: 1px 1px 1px 1px #d6d5d5;
-    margin: 1rem;
-    padding: 1rem;
+    border-left: 0.05px solid #cfcfcf;
+    background-color: #ffffff;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px #cfcfcf;
+    margin: 0.2rem 0.2rem 1rem 1.2rem;
 
+    padding: 0.5rem;
 
 }
 
-.containers i {
+.card i {
     display: block;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin: 0 0 1rem 0;
     text-align: center;
-    color: rgb(9, 145, 145);
+    color: #00958a;
     padding: 4px;
     border-bottom: 1px solid #cfcfcf; /* Add this line for the border */
  
@@ -89,12 +106,14 @@ font-size: 1.5rem;
 
 
  h2 {
-border-left: 3px solid red;
+border-left: 3px solid #e75c49;
 padding: 4px;
-color: rgb(9, 105, 105);
+color: #0c8c8c;
 float: left;
 margin-left: 10px;
 }
+
+/* table pages edit */
 
 table {
 
@@ -117,6 +136,7 @@ background-color:#b2dfdb;
 color: #006a6e;
 }
 
+/* button add pages  */
 .btnadd {
 
 background-color: #ef5e4a;
@@ -141,9 +161,7 @@ outline: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 0.5rem;
-    margin-right: 1rem;
-    margin-top: 0.5rem;
+    margin:  0.5rem 1rem 0 0.5rem;
     border: 1px solid #eaedef;
     padding: 1rem;
 
@@ -186,9 +204,7 @@ outline: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 0.5rem;
-    margin-right: 1rem;
-    margin-top: 0.5rem;
+    margin:  0.5rem 1rem 0 0.5rem;
     border: 1px solid #eaedef;
     padding: 1rem;
   
@@ -227,8 +243,181 @@ outline: none;
 
     border: 2px solid rgb(137, 202, 224);
   }
-   
 
+  /* Add Teacher fieldset */
+
+  .add-Teacher {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:  0.5rem 1rem 0 0.5rem;
+    border: 1px solid #eaedef;
+    padding: 1rem;
+  
+  }
+  
+  .add-Teacher label {
+    color: #009dae;
+    font-weight: bold;
+    font-size: 13px;
+
+  }
+  
+  .add-Teacher form {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .add-Teacher div {
+    width: 25%;
+    display: inline-block;
+  }
+  
+.add-Teacher input {
+
+  width: 90%;
+  padding: 10px;
+  margin: 0 0 10px 0;
+  border: 1px solid rgba(207, 205, 205, 0.5);
+  box-sizing: border-box;
+  height: 2rem; 
+  outline: none;
+
+  } 
+
+  .add-Teacher input:focus {
+
+    border: 2px solid rgb(137, 202, 224);
+  }
+
+ /* add Student fieldset */
+
+  .add-Student {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:  0.5rem 1rem 0 0.5rem;
+    border: 1px solid #eaedef;
+    padding: 1rem;
+  
+  }
+  
+  .add-Student label {
+    color: #009dae;
+    font-weight: bold;
+    font-size: 13px;
+
+  }
+  
+  .add-Student form {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .add-Student div {
+    width: 30%;
+    display: inline-block;
+  }
+  
+.add-Student input {
+
+  width: 90%;
+  padding: 10px;
+  margin: 0 0 10px 0;
+  border: 1px solid rgba(207, 205, 205, 0.5);
+  box-sizing: border-box;
+  height: 2rem; 
+  outline: none;
+
+  } 
+
+  .add-Student input:focus {
+
+    border: 2px solid rgb(137, 202, 224);
+  } 
+
+  /* contact us page */
+
+  .contact {
+
+    display: flex ;
+    flex-wrap: wrap;
+    margin: 1rem 0 0 0;
+  }
+  
+  .contact .card {
+    width: 20%;
+    margin: 1rem 1rem 0.1rem 1rem;
+    padding: 0 0.2rem 0.2rem 0;
+
+}
+
+.contact .card i {
+  display: inline-flex; 
+  font-size: 2rem;
+  color: #ed5d49;
+  border: 2px solid #1f9e95;
+  padding: 8px;
+  
+}
+h4 {
+
+border-left: 2px solid #e5533e;
+padding: 2px;
+color: #008c7e;
+margin: 0rem 1rem 1rem 0.7rem;
+font-size: 1.2rem;
+font-weight: bold;
+}
+
+.contact-us {
+
+  display: inline-block;
+}
+
+.contact-us label {
+  color: #009dae;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 1rem;
+
+}
+
+.contact-us div {
+  width: 70%;
+  display: inline-flex;
+  
+}
+
+.contact-us textarea {
+
+  height: 8rem;
+
+
+}
+
+.contact-us input,textarea {
+
+width: 55%;
+padding: 10px;
+margin: 0 0 1rem 1rem;
+border: 1px solid rgba(207, 205, 205, 0.5);
+box-sizing: border-box;
+height: 2rem; 
+outline: none;
+
+
+} 
+
+.contact-us input:focus,
+.contact-us textarea:focus
+ {
+
+  border: 2px solid rgb(137, 202, 224);
+} 
+
+  
+  /* Footer Editing */ 
 footer {
     background-color:#00968b;
     padding: 1px;

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link rel="stylesheet" href="pages.css">
+
+</head>
+<body>
+    <nav class="navbar">
+
+        <a id= "dashboard-link" href="dashboard.html"><i class="fa-solid fa-gauge" ></i>Dashboard</a>
+    
+        <a id= "parent-link" href="parent.html"><i class="fa-solid fa-people-roof"></i> Parent</a>
+    
+        <a id= "teacher-link" href="teacher.html"><i class="fas fa-chalkboard-teacher"></i>Teacher</a>
+      
+        <a href="student.html"><i class="fa-solid fa-book-open-reader"></i>Student </a>
+       
+        <a id = "admin-link"href="Admin.html"><i class="fa-solid fa-user-gear"></i>Admin</a>
+    
+        <a class="logoutbtn" href="index.html"><i class="fas fa-sign-out-alt"></i>Logout</a>
+    
+    </nav>
+
+
+    <h2>Student</h2>
+
+    <table>
+  <tr>
+  <th>ID</th>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Email</th>
+  <th> Address</th>
+  <th> Phone Number</th>
+  <th> Action</th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>Ziad</td>
+    <td>ob</td>
+    <td>zack@hotmail.com</td>
+    <td>irbid,USA</td>
+    <td>+9823892893</td>
+    <td style="text-align: center;">
+      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
+          Delete <i class="fas fa-trash" style="color: #ffffff;">
+          </i>
+      </span>
+    </tr>
+
+  </td>
+
+</tr>
+  <td>2</td>
+  <td>Ali</td>
+  <td>Mohammad</td>
+  <td>soso@hotmail.com</td>
+  <td>irbid,russia</td>
+  <td>+9823892239</td>
+  <td style="text-align: center;">
+    <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
+        Delete <i class="fas fa-trash" style="color: #ffffff;">
+        </i>
+    </span>
+</td>
+
+</tr>
+
+<tr>
+<td>666</td>
+<td>Ali</td>
+<td>Barakat</td>
+<td>Ali@hotmail.com</td>
+<td>Amman,USA</td>
+<td>+23892893</td>
+<td style="text-align: center;">
+  <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
+      Delete <i class="fas fa-trash" style="color: #ffffff;">
+      </i>
+  </span>
+</td>
+
+</tr>
+
+<tr>
+    <td>999</td>
+    <td>Soso</td>
+    <td>obeidat</td>
+    <td>obeidat@hotmail.com</td>
+    <td>Zarqa,USA</td>
+    <td>+982393666</td>
+    <td style="text-align: center;">
+      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
+          Delete <i class="fas fa-trash" style="color: #ffffff;">
+          </i>
+      </span>
+    </td>
+    </tr>
+    </table>
+
+    <button type="button" onclick="showStudent()" class="btnadd"><i class="fa-solid fa-plus" style="float: left;"></i> Add </button>
+
+    <fieldset class="add-Student" style="margin-left: 0.5rem; display: none;"id="add-Student" >
+
+        <legend style="color: #eb4c54; font-weight:bold;">Add Student</legend>
+   
+      <form action="#" method="post">
+        <div>
+      <label>First Name :</label>
+      <input type="text" placeholder="First Name" name="First Name"><br>
+    </div>
+    <div>
+        <label>Last Name :</label>
+        <input type="text" placeholder="Last Name" name="Last Name"><br>
+  
+      </div>
+  
+     
+      <div>
+        <label>Email :</label>
+        <input type="email" placeholder="Email" name="Email"><br>
+      </div>
+  
+    
+        <div>
+          <label>Address :</label><br>
+          <input type="text" placeholder="Address" name="Address"><br>
+        </div>
+
+        <div>
+            <label>Phone Number :</label>
+            <input type="tel" placeholder="Phone Number" name="Phone Number"><br>
+          </div>
+  
+    
+        <i class="fa-solid fa-book-open-reader" style="font-size: 6rem; color: #8f382c; float: right; position: relative; bottom: 4rem; left: 0.4rem;"></i>
+         
+        
+        <button class="btnadd" style=" float: right; position: relative; right: 1.5rem;top:2rem;">
+        <i class="fa-solid fa-download"></i> Save</button>
+  
+        <button class="btnadd" style="float:right;position: relative; left: 13.5rem; top: 2rem;">
+          
+        <i class="fa-solid fa-xmark"></i> Cancel</button>
+       
+  
+      </form>
+  
+      
+  </fieldset>
+
+    
+    <footer> 
+        <a style="border-right: 2px solid rgb(255, 255, 255); padding:3px;" href="contact.html">Contact us</a>  
+        <a>About us</a>
+        <p style="color: #ffffff; font-weight: bold;">&copy; 2023 BluLogix, LLC. All rights reserved.</p>
+      </footer>
+  
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/1e4272720a.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
