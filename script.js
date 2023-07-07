@@ -1,4 +1,4 @@
-
+// active page 
 let currentPageUrl = window.location.href;
 
 let links = document.querySelectorAll('.navbar a');
