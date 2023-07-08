@@ -50,12 +50,9 @@
     <td>irbid,USA</td>
     <td>C</td>
     <td>java</td>
-    <td style="text-align: center;">
-      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
-          Delete <i class="fas fa-trash" style="color: #ffffff;">
-          </i>
-      </span>
-  </td>
+    <td class="delete">
+      <span>Delete <i class="fas fa-trash"></i></span>
+    </td>
 
   </tr>
   <tr>
@@ -66,12 +63,9 @@
     <td>New jersy , USA</td>
     <td>A</td>
     <td>C#</td>
-    <td style="text-align: center;">
-      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
-          Delete <i class="fas fa-trash" style="color: #ffffff;">
-          </i>
-      </span>
-  </td>
+    <td class="delete">
+      <span>Delete <i class="fas fa-trash"></i></span>
+    </td>
   </tr>
 
   <tr>
@@ -82,12 +76,9 @@
     <td>mafraq,jordan</td>
     <td>E</td>
     <td>Pyhon</td>
-    <td style="text-align: center;">
-      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
-          Delete <i class="fas fa-trash" style="color: #ffffff;">
-          </i>
-      </span>
-  </td>
+    <td class="delete">
+      <span>Delete <i class="fas fa-trash"></i></span>
+    </td>
   </tr>
 
   <tr>
@@ -98,12 +89,9 @@
     <td>fo3ara, jordan</td>
     <td>D</td>
     <td>C++</td>
-    <td style="text-align: center;">
-      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
-          Delete <i class="fas fa-trash" style="color: #ffffff;">
-          </i>
-      </span>
-  </td>
+    <td class="delete">
+      <span>Delete <i class="fas fa-trash"></i></span>
+    </td>
   </tr>
   <tr>
     <td>5</td>
@@ -113,12 +101,9 @@
     <td>Ramtha</td>
     <td>A</td>
     <td>Ruby</td>
-    <td style="text-align: center;">
-      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
-          Delete <i class="fas fa-trash" style="color: #ffffff;">
-          </i>
-      </span>
-  </td>
+    <td class="delete">
+      <span>Delete <i class="fas fa-trash"></i></span>
+    </td>
   </tr>
 
   <tr>
@@ -129,12 +114,9 @@
     <td>test,jordan</td>
     <td>B</td>
     <td>PHP</td>
-    <td style="text-align: center;">
-      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
-          Delete <i class="fas fa-trash" style="color: #ffffff;">
-          </i>
-      </span>
-  </td>
+    <td class="delete">
+      <span>Delete <i class="fas fa-trash"></i></span>
+    </td>
   </tr>
 
   <tr>
@@ -145,12 +127,9 @@
     <td>mafraq,jordan</td>
     <td>C</td>
     <td>HTML,Css</td>
-    <td style="text-align: center;">
-      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
-          Delete <i class="fas fa-trash" style="color: #ffffff;">
-          </i>
-      </span>
-  </td>
+    <td class="delete">
+      <span>Delete <i class="fas fa-trash"></i></span>
+    </td>
   </tr>
 
   <tr>
@@ -161,22 +140,19 @@
     <td></td>
     <td></td>
     <td></td>
-    <td style="text-align: center;">
-      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
-          Delete <i class="fas fa-trash" style="color: #ffffff;">
-          </i>
-      </span>
-  </td>
+    <td class="delete">
+      <span>Delete <i class="fas fa-trash"></i></span>
+    </td>
   </tr>
 
     </table>
 
-    <button type="button" onclick="showTeacher()" class="btnadd"><i class="fa-solid fa-plus" style="float: left;"></i> Add </button>
+    <button type="button" onclick="showTeacher()" class="button"><i class="fa-solid fa-plus"></i> Add </button>
 
 
-    <fieldset class="add-Teacher" style="margin-left: 0.5rem; display: none; "id="add-Teacher" >
+    <fieldset class="add-Teacher" id="add-Teacher" >
 
-      <legend style="color: #eb4c54; font-weight:bold;">Add Teacher</legend>
+      <legend>Add Teacher</legend>
  
     <form action="#" method="post">
       <div>
@@ -220,10 +196,10 @@
       <i class="fa-solid fa-chalkboard-teacher" style="font-size: 6rem; color: #8f382c; float: right; position: relative; bottom: 7.5rem; right: 12px;"></i>
        
       
-      <button class="btnadd" style=" float: right; position: relative; right: 1rem;bottom:1.1rem;">
+      <button class="button" style=" float: right; position: relative; right: 1rem;bottom:1.1rem;">
       <i class="fa-solid fa-download"></i> Save</button>
 
-      <button class="btnadd" style="float:right;position: relative; left: 13.5rem; bottom: 1.1rem;">
+      <button class="button" style="float:right;position: relative; left: 13.5rem; bottom: 1.1rem;">
         
       <i class="fa-solid fa-xmark"></i> Cancel</button>
      
@@ -233,11 +209,11 @@
     
 </fieldset>
 
-    <footer> 
-        <a style="border-right: 2px solid rgb(255, 255, 255); padding:3px;" href="contact.html">Contact us</a>  
-        <a>About us</a>
-        <p style="color: #ffffff; font-weight: bold;">&copy; 2023 BluLogix, LLC. All rights reserved.</p>
-      </footer>
+<footer> 
+  <a class="contact-a" href="contact.html">Contact us</a>  
+  <a>About us</a>
+  <p>&copy; 2023 BluLogix, LLC. All rights reserved.</p>
+</footer>
 </body>
 
 

@@ -3,24 +3,27 @@ body {
     padding: 0;
 }
 
+/* title outside the form */
 .title{
 padding: 10px;
-margin: auto;
+margin: 0 auto;
 width: 50%;
-border: none;
 padding: 10px;
 text-align: center;
 }
 
 .title i{
 font-size: 6rem;
+color: #3b4b5c;
 
 }
 .title h3 {
 color: rgb(255, 60, 60);
+margin: 1rem 0 0 0;
 
 }
 
+/* form edit */
 .container {
 
 width: 30%;
@@ -52,7 +55,6 @@ font-weight: bold;
     box-sizing: border-box;
     height: 2.5rem;
   
-
 }
 
 .container input:focus {

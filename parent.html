@@ -30,7 +30,7 @@
    
     <h2>Parent</h2>
 
-    <table style="width: 98%;">
+    <table>
  <tr>
  <th>ID</th>
  <th>First Name</th>
@@ -46,11 +46,8 @@
     <td>ob</td>
     <td>+08796666</td>
     <td>irbid</td>
-    <td style="text-align: center;">
-      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
-          Delete <i class="fas fa-trash" style="color: #ffffff;">
-          </i>
-      </span>
+    <td class="delete">
+      <span>Delete <i class="fas fa-trash"></i></span>
   </td>
   </tr>
 
@@ -60,12 +57,9 @@
     <td>Doe</td>
     <td>+972622928</td>
     <td>New York</td>
-    <td style="text-align: center;">
-      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
-          Delete <i class="fas fa-trash" style="color: #ffffff;">
-          </i>
-      </span>
-  </td>
+    <td class="delete">
+        <span>Delete <i class="fas fa-trash"></i></span>
+    </td>
   </tr>
 
   <tr>
@@ -74,11 +68,8 @@
     <td>nah</td>
     <td>+127287287</td>
     <td>mafraq</td>
-    <td style="text-align: center;">
-      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
-          Delete <i class="fas fa-trash" style="color: #ffffff;">
-          </i>
-      </span>
+    <td class="delete">
+      <span>Delete <i class="fas fa-trash"></i></span>
   </td>
   </tr>
 
@@ -88,24 +79,20 @@
     <td>azzam</td>
     <td>+9972892828</td>
     <td>Zarqa</td>
-    
-    <td style="text-align: center;">
-      <span style="display: inline-block; background-color: #009688;padding: 2px; color: white;">
-          Delete <i class="fas fa-trash" style="color: #ffffff;">
-          </i>
-      </span>
+    <td class="delete">
+    <span>Delete <i class="fas fa-trash"></i></span>
   </td>
   
     </tr>
 
     </table>
 
-    <button class="btnadd" type="button" onclick="showParent()"><i class="fa-solid fa-plus" style="float: left;"></i> Add</button>
+    <button class="button" type="button" onclick="showParent()"><i class="fa-solid fa-plus"></i>Add</button>
 
 
-    <fieldset class="add-parent" style="margin-left: 0.5em; display: none; " id="add-parent">
+    <fieldset class="add-parent" id="add-parent">
 
-      <legend style="color: #eb4c54; font-weight:bold;">Add parent</legend>
+      <legend>Add parent</legend>
  
     <form action="#" method="post">
       <div>
@@ -130,10 +117,10 @@
       <i class="fa-solid fa-people-roof" style="font-size: 5.5rem; color: #00968b; float: right; position: relative; bottom: 4rem; right: 10px;"></i>
        
       
-      <button class="btnadd" style=" position: relative; left: 2rem;top: 2.5rem;">
+      <button class="button" style=" position: relative; left: 2rem;top: 2.5rem;">
       <i class="fa-solid fa-download"></i> Save</button>
 
-      <button class="btnadd" style="float: right;position: relative; left: 7rem; bottom: 1.1rem;">
+      <button class="button" style="float: right;position: relative; left: 7rem; bottom: 1.1rem;">
         
       <i class="fa-solid fa-xmark"></i> Cancel</button>
      
@@ -143,12 +130,11 @@
     
 </fieldset>
 
-    <footer> 
-      <a style="border-right: 2px solid rgb(255, 255, 255); padding:3px;" href="contact.html">Contact us</a>  
-      <a>About us</a>
-      <p style="color: #ffffff; font-weight: bold;">&copy; 2023 BluLogix, LLC. All rights reserved.</p>
-    </footer>
-
+<footer> 
+  <a class="contact-a" href="contact.html">Contact us</a>  
+  <a>About us</a>
+  <p>&copy; 2023 BluLogix, LLC. All rights reserved.</p>
+</footer>
 
     <script src="https://kit.fontawesome.com/1e4272720a.js" crossorigin="anonymous"></script>
 

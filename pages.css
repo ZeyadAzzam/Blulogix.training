@@ -60,6 +60,16 @@ body {
   background-color: #f16e5c;
 }
 
+/* h3 edit */
+
+.title {
+  border-left: 2.5px solid #e5533e;
+  padding: 3px;
+  color: #008c7e;
+  margin: 2rem 1rem 1rem 0.7rem;
+  font-size: 1.3rem;
+  }
+
 /* container dashboard edit */
 
 .container {
@@ -67,15 +77,7 @@ body {
     flex-wrap: wrap;
 }
 
-/* h3 edit */
 
-h3 {
-border-left: 2.5px solid #e5533e;
-padding: 3px;
-color: #008c7e;
-margin: 2rem 1rem 1rem 0.7rem;
-font-size: 1.3rem;
-}
 
 /* containers dashboard edit */
 
@@ -106,6 +108,17 @@ font-size: 1.3rem;
  
 }
 
+.card {
+
+  font-weight: bold;
+}
+
+.card .span-name {
+
+  color:rgb(9, 105, 105);
+
+}
+
 
  h2 {
 border-left: 3px solid #e75c49;
@@ -132,6 +145,20 @@ color: #0088a7;
 font-weight: bold;
 
 }
+ .delete {
+
+  text-align: center;
+}
+
+.delete span {
+
+  display: inline-block;
+   background-color: #009688;
+   padding: 2px;
+   color: white;
+}
+
+
 th {
 border: 0.5px solid rgb(5, 122, 142);
 background-color:#b2dfdb;
@@ -139,7 +166,7 @@ color: #006a6e;
 }
 
 /* button add pages  */
-.btnadd {
+.button {
 
 background-color: #ef5e4a;
 color: white;
@@ -150,6 +177,9 @@ height: 2rem;
 margin-top: 1rem;
 outline: none;
 
+}
+.button i {
+  float: left;
 }
 
 .btnadd:hover {
@@ -166,8 +196,13 @@ outline: none;
     margin:  0.5rem 1rem 0 0.5rem;
     border: 1px solid #eaedef;
     padding: 1rem;
+    display: none;
 
-    
+  }
+  .add-parent legend {
+
+    color: #eb4c54;
+     font-weight:bold;
   }
   
   .add-parent label {
@@ -201,6 +236,7 @@ outline: none;
     border: 2px solid rgb(137, 202, 224);
   }
 
+
   /* Add admin fieldset */
 .add-admin {
     display: flex;
@@ -209,7 +245,13 @@ outline: none;
     margin:  0.5rem 1rem 0 0.5rem;
     border: 1px solid #eaedef;
     padding: 1rem;
+    display: none;
   
+  }
+  .add-admin legend {
+
+    color: #eb4c54;
+    font-weight:bold;
   }
   
   .add-admin label {
@@ -255,7 +297,13 @@ outline: none;
     margin:  0.5rem 1rem 0 0.5rem;
     border: 1px solid #eaedef;
     padding: 1rem;
+    display: none; 
   
+  }
+  .add-Teacher {
+
+    color: #eb4c54;
+    font-weight:bold;
   }
   
   .add-Teacher label {
@@ -301,7 +349,13 @@ outline: none;
     margin:  0.5rem 1rem 0 0.5rem;
     border: 1px solid #eaedef;
     padding: 1rem;
+    display: none;
   
+  }
+  .add-Student legend {
+
+    color: #eb4c54;
+    font-weight:bold;
   }
   
   .add-Student label {
@@ -353,6 +407,15 @@ outline: none;
     padding: 0 0.2rem 0.2rem 0;
 
 }
+
+.card span {
+  font-weight: bold;
+}
+.parent-span {
+
+  color:rgb(9, 105, 105);
+   
+} 
 
 .contact .card i {
   display: inline-flex; 
@@ -436,6 +499,18 @@ footer a {
     color: white;
     text-decoration: none;
 }
+footer .contact-a {
+
+   border-right: 2px solid rgb(255, 255, 255);
+   padding:6px;
+
+  }
+
+  footer p {
+
+    font-weight: bold;
+    color: white;
+  }
 
 
 
