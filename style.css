@@ -76,3 +76,10 @@ cursor: pointer;
 border: none;
 
 }
+
+button i {
+    padding: 8px;
+    color: white;
+    border: none;
+}
+
