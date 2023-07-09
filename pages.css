@@ -60,6 +60,8 @@ body {
   background-color: #f16e5c;
 }
 
+  
+
 /* h3 edit */
 
 .title {
@@ -76,7 +78,6 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-
 
 
 /* containers dashboard edit */
@@ -182,7 +183,7 @@ outline: none;
   float: left;
 }
 
-.btnadd:hover {
+.button:hover {
 
     border: 1px solid rgb(97, 175, 201);
 
@@ -230,6 +231,43 @@ outline: none;
   outline: none;
 
   } 
+
+  .add-parent .icon {
+    font-size: 5.5rem;
+    color: #00968b;
+    float: right;
+    position: relative;
+    bottom: 4rem;
+    right: 10px;
+  }
+  
+  .add-parent .save-button {
+    position: relative;
+    left: 2.2rem;
+    top: 1.6rem;
+    background-color: #ef5e4a;
+    color: white;
+    border: 1px solid white;
+    width: 6.5rem;
+    height: 2rem;
+    outline: none;
+
+    
+  }
+  
+  .add-parent .cancel-button {
+    position: relative;
+    float: right;
+    left: 7rem;
+    bottom: 1.1rem;
+    background-color: #ef5e4a;
+    color: white;
+    border: 1px solid white;
+    width: 6.5rem;
+    height: 2rem;
+    outline: none;
+   
+  }
 
   .add-parent input:focus {
 
@@ -288,6 +326,43 @@ outline: none;
     border: 2px solid rgb(137, 202, 224);
   }
 
+  .add-admin .icon {
+    font-size: 5rem;
+    color: #8f382c;
+    float: right;
+    position: relative;
+    bottom: 7rem;
+    right: 12px;
+  }
+  
+  
+  .add-admin .save-button {
+    float: right;
+    position: relative;
+    right: 1.8rem;
+    bottom: 1.1rem;
+    background-color: #ef5e4a;
+    color: white;
+    border: 1px solid white;
+    width: 6.5rem;
+    height: 2rem;
+    outline: none;
+  }
+  
+  .add-admin .cancel-button {
+    float: right;
+    position: relative;
+    left: 12.5rem;
+    bottom: 1.1rem;
+    background-color: #ef5e4a;
+    color: white;
+    border: 1px solid white;
+    width: 6.5rem;
+    height: 2rem;
+    outline: none;
+  }
+  
+
   /* Add Teacher fieldset */
 
   .add-Teacher {
@@ -338,6 +413,43 @@ outline: none;
   .add-Teacher input:focus {
 
     border: 2px solid rgb(137, 202, 224);
+  }
+
+  .add-Teacher .icon {
+    font-size: 6rem;
+  color: #8f382c;
+  float: right;
+  position: relative;
+  bottom: 7.5rem;
+  right: 12px;
+  }
+  
+  
+  .add-Teacher .save-button {
+    float: right;
+    position: relative;
+    right: 1rem;
+    bottom: 1.1rem;
+    background-color: #ef5e4a;
+    color: white;
+    border: 1px solid white;
+    width: 6.5rem;
+    height: 2rem;
+    outline: none;
+
+  }
+  
+  .add-Teacher .cancel-button {
+    float: right;
+    position: relative;
+    left: 13.5rem;
+    bottom: 1.1rem;
+    background-color: #ef5e4a;
+    color: white;
+    border: 1px solid white;
+    width: 6.5rem;
+    height: 2rem;
+    outline: none;
   }
 
  /* add Student fieldset */
@@ -391,6 +503,42 @@ outline: none;
 
     border: 2px solid rgb(137, 202, 224);
   } 
+
+  .add-Student .icon {
+    font-size: 6rem;
+    color: #8f382c;
+    float: right;
+    position: relative;
+    bottom: 4rem;
+    left: 0.4rem;
+  }
+  
+  
+  .add-Student .save-button {
+    float: right;
+    position: relative;
+    top:4rem;
+    background-color: #ef5e4a;
+    color: white;
+    border: 1px solid white;
+    width: 6.5rem;
+    height: 2rem;
+    outline: none;
+
+  }
+  
+  .add-Student .cancel-button {
+    float: right;
+    position: relative;
+    left: 13.5rem;
+    top: 4rem;
+    background-color: #ef5e4a;
+    color: white;
+    border: 1px solid white;
+    width: 6.5rem;
+    height: 2rem;
+    outline: none;
+  }
 
   /* contact us page */
 
@@ -513,6 +661,37 @@ footer .contact-a {
   }
 
 
+  /* @media (max-width: 768px) {
 
+    
+    .navbar {
+      width: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #00968b;
+      padding: 1rem;
+    }
+  
+    .navbar a {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      color: white;
+      text-decoration: none;
+    }
+  
+    .navbar .logoutbtn {
+      margin: 0;
+      background: none;
+      color: #f2f2f2;
+    }
 
-
+   
+   
+  }
+  
+ */
