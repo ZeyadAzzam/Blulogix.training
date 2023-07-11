@@ -1,53 +1,54 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-    
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
 /* navbar edit */
 
 .navbar {
-    background-color:#00968b;
-    display: flex;
+  background-color: #00968b;
+  display: flex;
 
 }
 
 .navbar a {
-    display: flex;
-    flex-direction: column;
-    padding: 0.4rem 2.9rem;
-    color: white;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0.4rem 2.9rem;
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .navbar i {
-    margin-bottom: 5px;
-    font-size: 1.5rem;
-    padding: 12px;
-    border-radius: 50%;
-    background-color:#1aa197; 
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #1aa197;
 }
-    .navbar .logoutbtn {
-    margin: 0 1.2rem 0 auto;
-    background: none;
-    color: #f2f2f2;
-    cursor: pointer;
-    display: right;
-    align-items: center;
+
+.navbar .logoutbtn {
+  margin: 0 1.2rem 0 auto;
+  background: none;
+  color: #f2f2f2;
+  cursor: pointer;
+  display: right;
+  align-items: center;
 }
 
 .navbar a:hover {
-    background-color: #ef5e4a;
-    border-bottom: 4px solid #00968b;
-    scale: 1.1;
+  background-color: #ef5e4a;
+  border-bottom: 4px solid #00968b;
+  scale: 1.1;
 }
 
-.navbar a:hover > i {
-    background-color: #f16e5c;
+.navbar a:hover>i {
+  background-color: #f16e5c;
 }
 
 /* active page navbar a */
@@ -56,12 +57,13 @@ body {
   border-bottom: 4px solid #00968b;
   scale: 1.1;
 }
+
 /* active */
-.navbar a.active > i {
+.navbar a.active>i {
   background-color: #f16e5c;
 }
 
-  
+
 
 /* h3 edit */
 
@@ -71,43 +73,44 @@ body {
   color: #008c7e;
   margin: 2rem 1rem 1rem 0.7rem;
   font-size: 1.3rem;
-  }
+}
 
 /* container dashboard edit */
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
 /* containers dashboard edit */
 
 .container .card {
-    width: 19rem;
-    height: 5.5rem;
-    border-top: 3px solid #ee543f;
-    border-right: 0.05px solid#cfcfcf ;
-    border-bottom: 0.05px solid#cfcfcf;
-    border-left: 0.05px solid #cfcfcf;
-    background-color: #ffffff;
-    box-shadow: 0.5px 0.5px 0.5px 0.5px #cfcfcf;
-    margin: 0.2rem 0.2rem 1rem 1.2rem;
+  width: 19rem;
+  height: 5.5rem;
+  border-top: 3px solid #ee543f;
+  border-right: 0.05px solid#cfcfcf;
+  border-bottom: 0.05px solid#cfcfcf;
+  border-left: 0.05px solid #cfcfcf;
+  background-color: #ffffff;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px #cfcfcf;
+  margin: 0.2rem 0.2rem 1rem 1.2rem;
 
-    padding: 0.5rem;
+  padding: 0.5rem;
 
 }
 
 /* dashboards card */
 .card i {
-    display: block;
-    font-size: 2.5rem;
-    margin: 0 0 1rem 0;
-    text-align: center;
-    color: #00958a;
-    padding: 4px;
-    border-bottom: 1px solid #cfcfcf; /* Add this line for the border */
- 
+  display: block;
+  font-size: 2.5rem;
+  margin: 0 0 1rem 0;
+  text-align: center;
+  color: #00958a;
+  padding: 4px;
+  border-bottom: 1px solid #cfcfcf;
+  /* Add this line for the border */
+
 }
 
 .card {
@@ -117,37 +120,46 @@ body {
 
 .card .span-name {
 
-  color:rgb(9, 105, 105);
+  color: rgb(9, 105, 105);
 
 }
 
 
 .page-title {
-border-left: 3px solid #e75c49;
-padding: 4px;
-color: #0c8c8c;
-float: left;
-margin-left: 10px;
+  border-left: 3px solid #e75c49;
+  padding: 4px;
+  color: #0c8c8c;
+  float: left;
+  margin-left: 10px;
 }
 
 /* table pages edit */
 
+.table-container {
+
+  overflow-x: auto;
+
+
+}
+
 table {
 
-border: 0.5px solid rgb(13, 153, 178);
-border-collapse: collapse;
-width: 98%;
-margin-left: 10px;
+
+  border: 0.5px solid rgb(13, 153, 178);
+  border-collapse: collapse;
+  width: 98%;
+  margin-left: 10px;
 
 }
 
 td {
-border: 0.5px solid rgb(5, 122, 142);
-color: #0088a7;
-font-weight: bold;
+  border: 0.5px solid rgb(5, 122, 142);
+  color: #0088a7;
+  font-weight: bold;
 
 }
- .delete {
+
+.delete {
 
   text-align: center;
 }
@@ -155,161 +167,165 @@ font-weight: bold;
 .delete span {
 
   display: inline-block;
-   background-color: #009688;
-   padding: 2px;
-   color: white;
+  background-color: #009688;
+  padding: 2px;
+  color: white;
 }
 
 
 th {
-border: 0.5px solid rgb(5, 122, 142);
-background-color:#b2dfdb;
-color: #006a6e;
+  border: 0.5px solid rgb(5, 122, 142);
+  background-color: #b2dfdb;
+  color: #006a6e;
 }
 
 /* button add pages  */
 .button {
 
-background-color: #ef5e4a;
-color: white;
-border: 1px solid white;
-margin-left: 9px;
-width: 6.5rem;
-height: 2rem;
-margin-top: 1rem;
-outline: none;
+  background-color: #ef5e4a;
+  color: white;
+  border: 1px solid white;
+  margin-left: 9px;
+  width: 6.5rem;
+  height: 2rem;
+  margin-top: 1rem;
+  outline: none;
 
 }
+
 .button i {
   float: left;
 }
 
 .button:hover {
 
-    border: 1px solid rgb(97, 175, 201);
+  border: 1px solid rgb(97, 175, 201);
 
 }
 
 /* Add parent fieldset */
 .add-parent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin:  0.5rem 1rem 0 0.5rem;
-    border: 1px solid #eaedef;
-    padding: 1rem;
-    display: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0.5rem 1rem 0 0.5rem;
+  border: 1px solid #eaedef;
+  padding: 1rem;
+  display: none;
 
-  }
-  .add-parent legend {
+}
 
-    color: #eb4c54;
-     font-weight:bold;
-  }
-  
-  .add-parent label {
-    color: #009dae;
+.add-parent legend {
 
-  }
-  
-  .add-parent form {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  
-  .add-parent div {
-    width: 40%;
-    display: inline-block;
-  }
-  
-  .add-parent input {
-    width: 90%;
+  color: #eb4c54;
+  font-weight: bold;
+}
+
+.add-parent label {
+  color: #009dae;
+
+}
+
+.add-parent form {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.add-parent div {
+  width: 40%;
+  display: inline-block;
+}
+
+.add-parent input {
+  width: 90%;
   padding: 10px;
   margin: 0 0 10px 0;
   border: 1px solid rgba(207, 205, 205, 0.5);
   box-sizing: border-box;
-  height: 2rem; 
+  height: 2rem;
   outline: none;
 
-  } 
+}
 
-  .add-parent .icon {
-    font-size: 5.5rem;
-    color: #00968b;
-    float: right;
-    position: relative;
-    bottom: 4rem;
-    right: 10px;
-  }
-  
-  .add-parent .save-button {
-    position: relative;
-    left: 2.2rem;
-    top: 1.6rem;
-    background-color: #ef5e4a;
-    color: white;
-    border: 1px solid white;
-    width: 6.5rem;
-    height: 2rem;
-    outline: none;
+.add-parent .icon {
+  font-size: 5.5rem;
+  color: #00968b;
+  float: right;
+  position: relative;
+  bottom: 4rem;
+  right: 10px;
+}
 
-    
-  }
-  
-  .add-parent .cancel-button {
-    position: relative;
-    float: right;
-    left: 7rem;
-    bottom: 1.1rem;
-    background-color: #ef5e4a;
-    color: white;
-    border: 1px solid white;
-    width: 6.5rem;
-    height: 2rem;
-    outline: none;
-   
-  }
-
-  .add-parent input:focus {
-
-    border: 2px solid rgb(137, 202, 224);
-  }
+.add-parent .save-button {
+  position: relative;
+  float: right;
+  right: 0.2rem;
+  top: 2.7rem;
+  background-color: #ef5e4a;
+  color: white;
+  border: 1px solid white;
+  width: 6.5rem;
+  height: 2rem;
+  outline: none;
 
 
-  /* Add admin fieldset */
+}
+
+.add-parent .cancel-button {
+  position: relative;
+  float: right;
+  left: 7rem;
+  bottom: 1rem;
+  background-color: #ef5e4a;
+  color: white;
+  border: 1px solid white;
+  width: 6.5rem;
+  height: 2rem;
+  outline: none;
+
+}
+
+.add-parent input:focus {
+
+  border: 2px solid rgb(137, 202, 224);
+}
+
+
+/* Add admin fieldset */
 .add-admin {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin:  0.5rem 1rem 0 0.5rem;
-    border: 1px solid #eaedef;
-    padding: 1rem;
-    display: none;
-  
-  }
-  .add-admin legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0.5rem 1rem 0 0.5rem;
+  border: 1px solid #eaedef;
+  padding: 1rem;
+  display: none;
 
-    color: #eb4c54;
-    font-weight:bold;
-  }
-  
-  .add-admin label {
-    color: #009dae;
-    font-weight: bold;
-    font-size: 13px;
+}
 
-  }
-  
-  .add-admin form {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  
-  .add-admin div {
-    width: 25%;
-    display: inline-block;
-  }
-  
+.add-admin legend {
+
+  color: #eb4c54;
+  font-weight: bold;
+}
+
+.add-admin label {
+  color: #009dae;
+  font-weight: bold;
+  font-size: 13px;
+
+}
+
+.add-admin form {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.add-admin div {
+  width: 25%;
+  display: inline-block;
+}
+
 .add-admin input {
 
   width: 90%;
@@ -317,88 +333,89 @@ outline: none;
   margin: 0 0 10px 0;
   border: 1px solid rgba(207, 205, 205, 0.5);
   box-sizing: border-box;
-  height: 2rem; 
+  height: 2rem;
   outline: none;
 
-  } 
+}
 
-  .add-admin input:focus {
+.add-admin input:focus {
 
-    border: 2px solid rgb(137, 202, 224);
-  }
+  border: 2px solid rgb(137, 202, 224);
+}
 
-  .add-admin .icon {
-    font-size: 5rem;
-    color: #8f382c;
-    float: right;
-    position: relative;
-    bottom: 7rem;
-    right: 12px;
-  }
-  
-  
-  .add-admin .save-button {
-    float: right;
-    position: relative;
-    right: 1.8rem;
-    bottom: 1.1rem;
-    background-color: #ef5e4a;
-    color: white;
-    border: 1px solid white;
-    width: 6.5rem;
-    height: 2rem;
-    outline: none;
-  }
-  
-  .add-admin .cancel-button {
-    float: right;
-    position: relative;
-    left: 12.5rem;
-    bottom: 1.1rem;
-    background-color: #ef5e4a;
-    color: white;
-    border: 1px solid white;
-    width: 6.5rem;
-    height: 2rem;
-    outline: none;
-  }
-  
+.add-admin .icon {
+  font-size: 5rem;
+  color: #8f382c;
+  float: right;
+  position: relative;
+  bottom: 7rem;
+  right: 12px;
+}
 
-  /* Add Teacher fieldset */
 
-  .add-Teacher {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin:  0.5rem 1rem 0 0.5rem;
-    border: 1px solid #eaedef;
-    padding: 1rem;
-    display: none; 
-  
-  }
-  .add-Teacher {
+.add-admin .save-button {
+  float: right;
+  position: relative;
+  right: 1.8rem;
+  bottom: 1.1rem;
+  background-color: #ef5e4a;
+  color: white;
+  border: 1px solid white;
+  width: 6.5rem;
+  height: 2rem;
+  outline: none;
+}
 
-    color: #eb4c54;
-    font-weight:bold;
-  }
-  
-  .add-Teacher label {
-    color: #009dae;
-    font-weight: bold;
-    font-size: 13px;
+.add-admin .cancel-button {
+  float: right;
+  position: relative;
+  left: 12.5rem;
+  bottom: 1.1rem;
+  background-color: #ef5e4a;
+  color: white;
+  border: 1px solid white;
+  width: 6.5rem;
+  height: 2rem;
+  outline: none;
+}
 
-  }
-  
-  .add-Teacher form {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  
-  .add-Teacher div {
-    width: 25%;
-    display: inline-block;
-  }
-  
+
+/* Add Teacher fieldset */
+
+.add-Teacher {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0.5rem 1rem 0 0.5rem;
+  border: 1px solid #eaedef;
+  padding: 1rem;
+  display: none;
+
+}
+
+.add-Teacher {
+
+  color: #eb4c54;
+  font-weight: bold;
+}
+
+.add-Teacher label {
+  color: #009dae;
+  font-weight: bold;
+  font-size: 13px;
+
+}
+
+.add-Teacher form {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.add-Teacher div {
+  width: 25%;
+  display: inline-block;
+}
+
 .add-Teacher input {
 
   width: 90%;
@@ -406,88 +423,89 @@ outline: none;
   margin: 0 0 10px 0;
   border: 1px solid rgba(207, 205, 205, 0.5);
   box-sizing: border-box;
-  height: 2rem; 
+  height: 2rem;
   outline: none;
 
-  } 
+}
 
-  .add-Teacher input:focus {
+.add-Teacher input:focus {
 
-    border: 2px solid rgb(137, 202, 224);
-  }
+  border: 2px solid rgb(137, 202, 224);
+}
 
-  .add-Teacher .icon {
-    font-size: 6rem;
+.add-Teacher .icon {
+  font-size: 6rem;
   color: #8f382c;
   float: right;
   position: relative;
   bottom: 7.5rem;
   right: 12px;
-  }
-  
-  
-  .add-Teacher .save-button {
-    float: right;
-    position: relative;
-    right: 1rem;
-    bottom: 1.1rem;
-    background-color: #ef5e4a;
-    color: white;
-    border: 1px solid white;
-    width: 6.5rem;
-    height: 2rem;
-    outline: none;
+}
 
-  }
-  
-  .add-Teacher .cancel-button {
-    float: right;
-    position: relative;
-    left: 13.5rem;
-    bottom: 1.1rem;
-    background-color: #ef5e4a;
-    color: white;
-    border: 1px solid white;
-    width: 6.5rem;
-    height: 2rem;
-    outline: none;
-  }
 
- /* add Student fieldset */
+.add-Teacher .save-button {
+  float: right;
+  position: relative;
+  right: 1rem;
+  bottom: 1.1rem;
+  background-color: #ef5e4a;
+  color: white;
+  border: 1px solid white;
+  width: 6.5rem;
+  height: 2rem;
+  outline: none;
 
-  .add-Student {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin:  0.5rem 1rem 0 0.5rem;
-    border: 1px solid #eaedef;
-    padding: 1rem;
-    display: none;
-  
-  }
-  .add-Student legend {
+}
 
-    color: #eb4c54;
-    font-weight:bold;
-  }
-  
-  .add-Student label {
-    color: #009dae;
-    font-weight: bold;
-    font-size: 13px;
+.add-Teacher .cancel-button {
+  float: right;
+  position: relative;
+  left: 13.5rem;
+  bottom: 1.1rem;
+  background-color: #ef5e4a;
+  color: white;
+  border: 1px solid white;
+  width: 6.5rem;
+  height: 2rem;
+  outline: none;
+}
 
-  }
-  
-  .add-Student form {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  
-  .add-Student div {
-    width: 30%;
-    display: inline-block;
-  }
-  
+/* add Student fieldset */
+
+.add-Student {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0.5rem 1rem 0 0.5rem;
+  border: 1px solid #eaedef;
+  padding: 1rem;
+  display: none;
+
+}
+
+.add-Student legend {
+
+  color: #eb4c54;
+  font-weight: bold;
+}
+
+.add-Student label {
+  color: #009dae;
+  font-weight: bold;
+  font-size: 13px;
+
+}
+
+.add-Student form {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.add-Student div {
+  width: 30%;
+  display: inline-block;
+}
+
 .add-Student input {
 
   width: 90%;
@@ -495,93 +513,95 @@ outline: none;
   margin: 0 0 10px 0;
   border: 1px solid rgba(207, 205, 205, 0.5);
   box-sizing: border-box;
-  height: 2rem; 
+  height: 2rem;
   outline: none;
 
-  } 
+}
 
-  .add-Student input:focus {
+.add-Student input:focus {
 
-    border: 2px solid rgb(137, 202, 224);
-  } 
+  border: 2px solid rgb(137, 202, 224);
+}
 
-  .add-Student .icon {
-    font-size: 6rem;
-    color: #8f382c;
-    float: right;
-    position: relative;
-    bottom: 4rem;
-    left: 0.4rem;
-  }
-  
-  
-  .add-Student .save-button {
-    float: right;
-    position: relative;
-    top:4rem;
-    background-color: #ef5e4a;
-    color: white;
-    border: 1px solid white;
-    width: 6.5rem;
-    height: 2rem;
-    outline: none;
+.add-Student .icon {
+  font-size: 6rem;
+  color: #8f382c;
+  float: right;
+  position: relative;
+  bottom: 4rem;
+  left: 0.4rem;
+}
 
-  }
-  
-  .add-Student .cancel-button {
-    float: right;
-    position: relative;
-    left: 13.5rem;
-    top: 4rem;
-    background-color: #ef5e4a;
-    color: white;
-    border: 1px solid white;
-    width: 6.5rem;
-    height: 2rem;
-    outline: none;
-  }
 
-  /* contact us page */
+.add-Student .save-button {
+  float: right;
+  position: relative;
+  top: 4rem;
+  background-color: #ef5e4a;
+  color: white;
+  border: 1px solid white;
+  width: 6.5rem;
+  height: 2rem;
+  outline: none;
 
-  .contact {
+}
 
-    display: flex ;
-    flex-wrap: wrap;
-    margin: 1rem 0 0 0;
-  }
-  
-  .contact .card {
-    width: 20%;
-    margin: 1rem 1rem 0.1rem 1rem;
-    padding: 0 0.2rem 0.2rem 0;
+.add-Student .cancel-button {
+  float: right;
+  position: relative;
+  left: 13.5rem;
+  top: 4rem;
+  background-color: #ef5e4a;
+  color: white;
+  border: 1px solid white;
+  width: 6.5rem;
+  height: 2rem;
+  outline: none;
+}
+
+/* contact us page */
+
+.contact {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0 0 0;
+}
+
+.contact .card {
+  width: 20%;
+  margin: 1rem 1rem 0.1rem 1rem;
+  padding: 0 0.2rem 0.2rem 0;
 
 }
 
 .card span {
   font-weight: bold;
 }
+
 .parent-span {
 
-  color:rgb(9, 105, 105);
-   
-} 
+  color: rgb(9, 105, 105);
+
+}
 
 .contact .card i {
-  display: inline-flex; 
+  display: inline-flex;
   font-size: 2rem;
   color: #ed5d49;
   border: 2px solid #1f9e95;
   padding: 8px;
-  
-}
-h4 {
 
-border-left: 2px solid #e5533e;
-padding: 2px;
-color: #008c7e;
-margin: 0rem 1rem 1rem 0.7rem;
-font-size: 1.1rem;
-font-weight: bold;
+}
+
+.contact-text {
+
+  border-left: 2px solid #e5533e;
+  padding: 2px;
+  color: #008c7e;
+  margin: 0rem 1rem 1rem 0.7rem;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .contact-us {
@@ -600,7 +620,7 @@ font-weight: bold;
 .contact-us div {
   width: 70%;
   display: inline-flex;
-  
+
 }
 
 .contact-us textarea {
@@ -610,89 +630,237 @@ font-weight: bold;
 
 }
 
-.contact-us input,textarea {
+.contact-us input,
+textarea {
 
-width: 55%;
-padding: 10px;
-margin: 0 0 1rem 1rem;
-border: 1px solid rgba(207, 205, 205, 0.5);
-box-sizing: border-box;
-height: 2rem; 
-outline: none;
+  width: 55%;
+  padding: 10px;
+  margin: 0 0 1rem 1rem;
+  border: 1px solid rgba(207, 205, 205, 0.5);
+  box-sizing: border-box;
+  height: 2rem;
+  outline: none;
 
 
-} 
+}
 
 .contact-us input:focus,
-.contact-us textarea:focus
- {
+.contact-us textarea:focus {
 
   border: 2px solid rgb(137, 202, 224);
-} 
+}
 
-  
-  /* Footer Editing */ 
+
+/* Footer Editing */
 footer {
-    background-color:#00968b;
-    padding: 1px;
-    text-align: center;
-    position:fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    margin: auto;
+  background-color: #00968b;
+  padding: 1px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
 }
 
 footer a {
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
+
 footer .contact-a {
 
-   border-right: 2px solid rgb(255, 255, 255);
-   padding:6px;
+  border-right: 2px solid rgb(255, 255, 255);
+  padding: 6px;
+
+}
+
+footer p {
+
+  font-weight: bold;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+
+
+  /* Nav bar responsive */
+  .navbar {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+
+  .navbar a {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+   
+  }
+
+  .navbar .logoutbtn {
+    margin: 0;
+   
+  }
+
+  /* add parent page responsive */
+
+  .add-parent {
+
+    margin-bottom: 7rem;
+  }
+
+  .add-parent div {
+
+    width: 70%;
 
   }
 
-  footer p {
+  .add-parent .icon {
 
-    font-weight: bold;
-    color: white;
+    top: 0.2rem;
+    right: 10px;
+    font-size: 3rem;
+  }
+
+  .add-parent .save-button {
+
+    top: 0.8rem;
+    right: 7rem;
+  }
+
+  .add-parent .cancel-button {
+
+    top: 0.8rem;
+
+
   }
 
 
-  /* @media (max-width: 768px) {
+
+  /* add Teacher responsive */
+
+  .add-Teacher {
+
+    margin-bottom: 7rem;
+  }
+
+  .add-Teacher div {
+
+    width: 70%;
+  }
+
+  .add-Teacher .icon {
 
     
-    .navbar {
-      width: auto;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      background-color: #00968b;
-      padding: 1rem;
-    }
+    top: 0.2rem;
+    right: 10px;
+    font-size: 4rem;
+  }
+
+  .add-Teacher .save-button {
+   
+    right: 10rem;
+    top: 1.4rem;
+
+
+  }
+
+  .add-Teacher .cancel-button {
   
-    .navbar a {
-      flex: 0 0 auto;
-      display: flex;
-      align-items: center;
-      padding: 0.5rem 1rem;
-      color: white;
-      text-decoration: none;
-    }
+    left: 4rem;
+    top: 1.4rem;
+
+  }
+
+  /* Add Student Responsive */
+
+  .add-Student {
+
+    margin-bottom: 7rem;
+  }
+
+  .add-Student div {
+
+    width: 70%;
+  }
+
+  .add-Student .icon {
+
+    top: 0.2rem;
+    right: 10px;
+    font-size: 4rem;
+  }
+
+  .add-Student .save-button {
   
-    .navbar .logoutbtn {
-      margin: 0;
-      background: none;
-      color: #f2f2f2;
-    }
+    right: 10rem;
+    top: 1.4rem;
+
+
+  }
+
+  .add-Student .cancel-button {
+    
+    left: 4rem;
+    top: 1.4rem;
+
+  }
+
+  /* Add admin Responsive */
+
+  .add-admin {
+
+    margin-bottom: 7rem;
+  }
+
+  .add-admin  div {
+
+    width: 70%;
+  }
+
+  .add-admin  .icon {
 
    
-   
+    top: 0.2rem;
+    right: 10px;
+    font-size: 4rem;
   }
-  
- */
+
+  .add-admin  .save-button {
+    
+    right: 10rem;
+    top: 1.4rem;
+
+
+  }
+
+  .add-admin .cancel-button {
+   
+    left: 4rem;
+    top: 1.4rem;
+
+  }
+
+
+  /* contact us page small Screen */
+
+  .contact-us div {
+
+    width: 100%;
+  }
+
+  .contact-us .button {
+
+    margin-bottom: 5rem;
+
+  }
+
+
+}
