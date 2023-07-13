@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  line-height: normal;
+  font-weight: normal;
   font-family: 'Times New Roman', Times, serif;
 
 }
@@ -8,12 +10,18 @@ body {
 /* navbar edit */
 
 .navbar {
-  background-color: #00968b;
+
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.bg-light {
+  background-color: #00968b !important;
   display: flex;
 
 }
 
-.navbar a {
+.bg-light a {
   display: flex;
   flex-direction: column;
   padding: 0.4rem 2.9rem;
@@ -21,10 +29,11 @@ body {
   text-decoration: none;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 
-.navbar i {
+.bg-light i {
   margin-bottom: 5px;
   font-size: 1.5rem;
   padding: 12px;
@@ -32,40 +41,37 @@ body {
   background-color: #1aa197;
 }
 
-.navbar .logoutbtn {
-  margin: 0 1.2rem 0 auto;
+.bg-light .logoutbtn {
+  margin: 0 2rem 0 auto;
   background: none;
   color: #f2f2f2;
   cursor: pointer;
-  display: right;
+  float: right;
   align-items: center;
 }
 
-.navbar a:hover {
+.bg-light a:hover {
   background-color: #ef5e4a;
   border-bottom: 4px solid #00968b;
   scale: 1.1;
 }
 
-.navbar a:hover>i {
+.bg-light a:hover>i {
   background-color: #f16e5c;
 }
 
 /* active page navbar a */
-.navbar a.active {
+.bg-light a.active {
   background-color: #ef5e4a;
   border-bottom: 4px solid #00968b;
   scale: 1.1;
 }
 
 /* active */
-.navbar a.active>i {
+.bg-light a.active>i {
   background-color: #f16e5c;
 }
 
-
-
-/* h3 edit */
 
 .title {
   border-left: 2.5px solid #e5533e;
@@ -73,6 +79,7 @@ body {
   color: #008c7e;
   margin: 2rem 1rem 1rem 0.7rem;
   font-size: 1.3rem;
+  font-weight: bold;
 }
 
 /* container dashboard edit */
@@ -80,28 +87,28 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 
 /* containers dashboard edit */
 
-.container .card {
+.container .cards {
   width: 19rem;
-  height: 5.5rem;
   border-top: 3px solid #ee543f;
   border-right: 0.05px solid#cfcfcf;
   border-bottom: 0.05px solid#cfcfcf;
   border-left: 0.05px solid #cfcfcf;
   background-color: #ffffff;
+  font-weight: bold;
   box-shadow: 0.5px 0.5px 0.5px 0.5px #cfcfcf;
   margin: 0.2rem 0.2rem 1rem 1.2rem;
-
-  padding: 0.5rem;
 
 }
 
 /* dashboards card */
-.card i {
+.cards i {
   display: block;
   font-size: 2.5rem;
   margin: 0 0 1rem 0;
@@ -109,28 +116,24 @@ body {
   color: #00958a;
   padding: 4px;
   border-bottom: 1px solid #cfcfcf;
-  /* Add this line for the border */
 
 }
 
-.card {
 
-  font-weight: bold;
-}
-
-.card .span-name {
+.cards .span-name {
 
   color: rgb(9, 105, 105);
 
 }
 
-
 .page-title {
   border-left: 3px solid #e75c49;
   padding: 4px;
   color: #0c8c8c;
+  font-weight: bold;
   float: left;
   margin-left: 10px;
+  font-size: 1.5rem;
 }
 
 /* table pages edit */
@@ -138,7 +141,6 @@ body {
 .table-container {
 
   overflow-x: auto;
-
 
 }
 
@@ -179,9 +181,10 @@ th {
   color: #006a6e;
 }
 
-/* button add pages  */
-.button {
 
+
+/* button add pages  */
+.button-container .add-button {
   background-color: #ef5e4a;
   color: white;
   border: 1px solid white;
@@ -190,14 +193,17 @@ th {
   height: 2rem;
   margin-top: 1rem;
   outline: none;
+  line-height: normal;
+  margin-bottom: 1rem;
 
 }
 
-.button i {
+
+.add-button i {
   float: left;
 }
 
-.button:hover {
+.add-button:hover {
 
   border: 1px solid rgb(97, 175, 201);
 
@@ -219,6 +225,10 @@ th {
 
   color: #eb4c54;
   font-weight: bold;
+  float: none;
+  font-size: 16px;
+  width: auto;
+  padding: auto;
 }
 
 .add-parent label {
@@ -227,16 +237,15 @@ th {
 }
 
 .add-parent form {
-  width: 100%;
   flex-wrap: wrap;
 }
 
-.add-parent div {
+.add-parent .form-group {
   width: 40%;
   display: inline-block;
 }
 
-.add-parent input {
+.add-parent .form-control {
   width: 90%;
   padding: 10px;
   margin: 0 0 10px 0;
@@ -254,22 +263,25 @@ th {
   position: relative;
   bottom: 4rem;
   right: 10px;
+
+
 }
 
 .add-parent .save-button {
   position: relative;
   float: right;
   right: 0.2rem;
-  top: 2.7rem;
+  top: 2.9rem;
   background-color: #ef5e4a;
   color: white;
   border: 1px solid white;
   width: 6.5rem;
   height: 2rem;
   outline: none;
-
+  line-height: normal;
 
 }
+
 
 .add-parent .cancel-button {
   position: relative;
@@ -282,12 +294,13 @@ th {
   width: 6.5rem;
   height: 2rem;
   outline: none;
+  line-height: normal;
 
 }
 
-.add-parent input:focus {
+.add-parent .form-control:focus {
 
-  border: 2px solid rgb(137, 202, 224);
+  border: 2px solid rgb(137, 202, 224) !important;
 }
 
 
@@ -296,7 +309,6 @@ th {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0.5rem 1rem 0 0.5rem;
   border: 1px solid #eaedef;
   padding: 1rem;
   display: none;
@@ -307,6 +319,11 @@ th {
 
   color: #eb4c54;
   font-weight: bold;
+  float: none;
+  font-size: 16px;
+  width: auto;
+  padding: auto;
+
 }
 
 .add-admin label {
@@ -393,10 +410,14 @@ th {
 
 }
 
-.add-Teacher {
+.add-Teacher legend {
 
   color: #eb4c54;
   font-weight: bold;
+  float: none;
+  font-size: 16px;
+  width: auto;
+  padding: auto;
 }
 
 .add-Teacher label {
@@ -411,12 +432,12 @@ th {
   flex-wrap: wrap;
 }
 
-.add-Teacher div {
+.add-Teacher .form-group {
   width: 25%;
   display: inline-block;
 }
 
-.add-Teacher input {
+.add-Teacher .form-control {
 
   width: 90%;
   padding: 10px;
@@ -428,7 +449,7 @@ th {
 
 }
 
-.add-Teacher input:focus {
+.add-Teacher .form-control:focus {
 
   border: 2px solid rgb(137, 202, 224);
 }
@@ -455,6 +476,11 @@ th {
   height: 2rem;
   outline: none;
 
+}
+
+.save-button i {
+
+  float: none;
 }
 
 .add-Teacher .cancel-button {
@@ -487,6 +513,10 @@ th {
 
   color: #eb4c54;
   font-weight: bold;
+  float: none;
+  font-size: 16px;
+  width: auto;
+  padding: auto;
 }
 
 .add-Student label {
@@ -501,12 +531,12 @@ th {
   flex-wrap: wrap;
 }
 
-.add-Student div {
+.add-Student .form-group {
   width: 30%;
   display: inline-block;
 }
 
-.add-Student input {
+.add-Student .form-control {
 
   width: 90%;
   padding: 10px;
@@ -518,7 +548,7 @@ th {
 
 }
 
-.add-Student input:focus {
+.add-Student .form-control:focus {
 
   border: 2px solid rgb(137, 202, 224);
 }
@@ -568,14 +598,14 @@ th {
   margin: 1rem 0 0 0;
 }
 
-.contact .card {
+.contact .cards {
   width: 20%;
   margin: 1rem 1rem 0.1rem 1rem;
   padding: 0 0.2rem 0.2rem 0;
 
 }
 
-.card span {
+.cards span {
   font-weight: bold;
 }
 
@@ -585,7 +615,7 @@ th {
 
 }
 
-.contact .card i {
+.contact .cards i {
   display: inline-flex;
   font-size: 2rem;
   color: #ed5d49;
@@ -625,13 +655,12 @@ th {
 
 .contact-us textarea {
 
-  height: 8rem;
+  height: 8rem !important;
 
 
 }
 
-.contact-us input,
-textarea {
+.contact-us .form-control {
 
   width: 55%;
   padding: 10px;
@@ -640,14 +669,25 @@ textarea {
   box-sizing: border-box;
   height: 2rem;
   outline: none;
-
-
 }
 
-.contact-us input:focus,
-.contact-us textarea:focus {
+.contact-us .form-control:focus {
 
   border: 2px solid rgb(137, 202, 224);
+}
+
+.contact-us .btn-primary {
+
+  background-color: #ef5e4a;
+  color: white;
+  border: 1px solid white;
+  margin-left: 9px;
+  width: 6.5rem;
+  height: 2rem;
+  margin-top: 1rem;
+  outline: none;
+
+
 }
 
 
@@ -665,7 +705,7 @@ footer {
 
 footer a {
   font-weight: bold;
-  color: white;
+  color: white !important;
   text-decoration: none;
 }
 
@@ -673,6 +713,7 @@ footer .contact-a {
 
   border-right: 2px solid rgb(255, 255, 255);
   padding: 6px;
+  margin-top: 2rem;
 
 }
 
@@ -682,183 +723,177 @@ footer p {
   color: white;
 }
 
+/* Media Screens */
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
+  .bg-light .logoutbtn {
 
-  /* Nav bar responsive */
-  .navbar {
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 1rem;
-  }
-
-  .navbar a {
-    flex: 0 0 auto;
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 1rem;
-   
-  }
-
-  .navbar .logoutbtn {
     margin: 0;
-   
   }
 
-  /* add parent page responsive */
+  /* Dashboard */
+  .container {
+    justify-content: center;
+  }
+
+  .container .cards {
+    margin-left: auto;
+    margin-right: auto;
+    width: 22rem;
+  }
+
+  .button-container .add-button {
+
+    margin-bottom: 3rem;
+  }
+
+  /* Add parent  */
 
   .add-parent {
 
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
   }
 
-  .add-parent div {
-
-    width: 70%;
-
-  }
-
-  .add-parent .icon {
-
-    top: 0.2rem;
-    right: 10px;
-    font-size: 3rem;
-  }
-
-  .add-parent .save-button {
-
-    top: 0.8rem;
-    right: 7rem;
-  }
-
-  .add-parent .cancel-button {
-
-    top: 0.8rem;
-
-
-  }
-
-
-
-  /* add Teacher responsive */
-
-  .add-Teacher {
-
-    margin-bottom: 7rem;
-  }
-
-  .add-Teacher div {
-
-    width: 70%;
-  }
-
-  .add-Teacher .icon {
-
-    
-    top: 0.2rem;
-    right: 10px;
-    font-size: 4rem;
-  }
-
-  .add-Teacher .save-button {
-   
-    right: 10rem;
-    top: 1.4rem;
-
-
-  }
-
-  .add-Teacher .cancel-button {
-  
-    left: 4rem;
-    top: 1.4rem;
-
-  }
-
-  /* Add Student Responsive */
-
-  .add-Student {
-
-    margin-bottom: 7rem;
-  }
-
-  .add-Student div {
-
-    width: 70%;
-  }
-
-  .add-Student .icon {
-
-    top: 0.2rem;
-    right: 10px;
-    font-size: 4rem;
-  }
-
-  .add-Student .save-button {
-  
-    right: 10rem;
-    top: 1.4rem;
-
-
-  }
-
-  .add-Student .cancel-button {
-    
-    left: 4rem;
-    top: 1.4rem;
-
-  }
-
-  /* Add admin Responsive */
-
-  .add-admin {
-
-    margin-bottom: 7rem;
-  }
-
-  .add-admin  div {
-
-    width: 70%;
-  }
-
-  .add-admin  .icon {
-
-   
-    top: 0.2rem;
-    right: 10px;
-    font-size: 4rem;
-  }
-
-  .add-admin  .save-button {
-    
-    right: 10rem;
-    top: 1.4rem;
-
-
-  }
-
-  .add-admin .cancel-button {
-   
-    left: 4rem;
-    top: 1.4rem;
-
-  }
-
-
-  /* contact us page small Screen */
-
-  .contact-us div {
+  .add-parent .form-group {
 
     width: 100%;
   }
 
-  .contact-us .button {
+  .add-parent .icon {
+
+    display: none;
+  }
+
+
+
+  .add-parent .save-button {
+    float: none;
+    right: auto;
+    top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .add-parent .cancel-button {
+    float: none;
+    left: auto;
+    bottom: 0;
+    margin-top: 0.2rem;
+    width: 100%;
+  }
+
+
+  /* add Teacher */
+  .add-Teacher {
+
+    margin-bottom: 3rem;
+  }
+
+  .add-Teacher .icon {
+    display: none;
+
+  }
+
+  .add-Teacher .save-button {
+    float: none;
+    right: auto;
+    top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .add-Teacher .cancel-button {
+    float: none;
+    left: auto;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .add-Teacher .form-group {
+
+    width: 100%;
+  }
+
+  /* Add student */
+
+
+  .add-Student {
+
+    margin-bottom: 3rem;
+  }
+
+  .add-Student .icon {
+    display: none;
+
+  }
+
+  .add-Student .form-group {
+
+    width: 100%;
+  }
+
+  .add-Student .save-button {
+    float: none;
+    right: auto;
+    top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .add-Student .cancel-button {
+    float: none;
+    left: auto;
+    top: 0.2rem;
+    margin-top: 0.2rem;
+    width: 100%;
+  }
+
+
+
+  /* Add Admin */
+
+  .add-admin {
 
     margin-bottom: 5rem;
+  }
+
+  .add-admin .form-group {
+
+    width: 100%;
+  }
+
+  .add-admin .icon {
+
+    display: none;
+  }
+
+
+  .add-admin .save-button {
+    float: none;
+    right: auto;
+    top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .add-admin .cancel-button {
+    float: none;
+    left: auto;
+    bottom: 0;
+    margin-top: 0.2rem;
+    width: 100%;
+  }
+
+  /* Contact us */
+  .contact-us {
+
+    margin-bottom: 4rem;
+  }
+
+  .contact-us div {
+    width: 100%;
+    display: inline-flex;
 
   }
 

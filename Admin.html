@@ -1,191 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
-    <link rel="stylesheet" href="pages.css">
 
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/1e4272720a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="pages.css">
+
+</head>
 
 <body>
 
-  <nav class="navbar">
+  <nav class="navbar navbar-light bg-light">
 
-    <a id= "dashboard-link" href="dashboard.html"><i class="fa-solid fa-gauge" ></i>Dashboard</a>
+    <a id="dashboard-link" href="dashboard.html"><i class="fa-solid fa-gauge"></i>Dashboard</a>
 
-    <a id= "parent-link" href="parent.html"><i class="fa-solid fa-people-roof"></i> Parent</a>
+    <a id="parent-link" href="parent.html"><i class="fa-solid fa-people-roof"></i> Parent</a>
 
-    <a id= "teacher-link" href="teacher.html"><i class="fas fa-chalkboard-teacher"></i>Teacher</a>
-  
+    <a id="teacher-link" href="teacher.html"><i class="fas fa-chalkboard-teacher"></i>Teacher</a>
+
     <a href="student.html"><i class="fa-solid fa-book-open-reader"></i>Student </a>
-   
-    <a id = "admin-link"href="Admin.html"><i class="fa-solid fa-user-gear"></i>Admin</a>
+
+    <a id="admin-link" href="Admin.html"><i class="fa-solid fa-user-gear"></i>Admin</a>
 
     <a class="logoutbtn" href="index.html"><i class="fas fa-sign-out-alt"></i>Logout</a>
 
-</nav>
-   
-<div  class="table-container">
+  </nav>
+
+  <div class="table-container">
 
     <h2 class="page-title">Admin</h2>
 
-    <table class="table table-borderless">
- <tr>
- <th>ID</th>
- <th>First Name</th>
- <th>Last Name</th>
-  <th>Phone Number</th>
-  <th>Email</th>
-  <th> Address</th>
-  <th> User Name</th>
-  <th> Action</th>
-</tr>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+        <th> Address</th>
+        <th> User Name</th>
+        <th> Action</th>
+      </tr>
 
-<tr>
-    <td>6</td>
-    <td>Test</td>
-    <td>ob</td>
-    <td>+08796666</td>
-    <td>test666@gmail.com</td>
-    <td>irbid</td>
-    <td>z.66</td>
-    <td class="delete">
-      <span>Delete <i class="fas fa-trash"></i></span>
-    </td>
-  </tr>
+      <tr>
+        <td>6</td>
+        <td>Test</td>
+        <td>ob</td>
+        <td>+08796666</td>
+        <td>test666@gmail.com</td>
+        <td>irbid</td>
+        <td>z.66</td>
+        <td class="delete">
+          <span>Delete <i class="fas fa-trash"></i></span>
+        </td>
+      </tr>
 
-  <tr>
-    <td>17</td>
-    <td>nanan</td>
-    <td>ob</td>
-    <td>+08796666</td>
-    <td>test66@gmail.com</td>
-    <td>irbid</td>
-    <td>m.66</td>
-    <td class="delete">
-      <span>Delete <i class="fas fa-trash"></i></span>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td>80</td>
-    <td>Radi</td>
-    <td>salamh</td>
-    <td>+32839238</td>
-    <td>test@gmail.com</td>
-    <td>Aqaba</td>
-    <td>remix</td>
-    <td class="delete">
-      <span>Delete <i class="fas fa-trash"></i></span>
-    </td>
-  </tr>
+      <tr>
+        <td>17</td>
+        <td>nanan</td>
+        <td>ob</td>
+        <td>+08796666</td>
+        <td>test66@gmail.com</td>
+        <td>irbid</td>
+        <td>m.66</td>
+        <td class="delete">
+          <span>Delete <i class="fas fa-trash"></i></span>
+        </td>
+      </tr>
 
 
-  <tr>
-    <td>77</td>
-    <td>Soso</td>
-    <td>salamh</td>
-    <td>+22992</td>
-    <td>soso@gmail.com</td>
-    <td>Aqaba,jordan</td>
-    <td>remix66</td>
-    <td class="delete">
-      <span>Delete <i class="fas fa-trash"></i></span>
-    </td>
-  </tr>
+      <tr>
+        <td>80</td>
+        <td>Radi</td>
+        <td>salamh</td>
+        <td>+32839238</td>
+        <td>test@gmail.com</td>
+        <td>Aqaba</td>
+        <td>remix</td>
+        <td class="delete">
+          <span>Delete <i class="fas fa-trash"></i></span>
+        </td>
+      </tr>
 
-  <tr>
-    <td>666</td>
-    <td>khaled</td>
-    <td>salamh</td>
-    <td>+111245</td>
-    <td>jojo@gmail.com</td>
-    <td>none</td>
-    <td>rkljke666</td>
-    <td class="delete">
-      <span>Delete <i class="fas fa-trash"></i></span>
-    </td>
-  </tr>
+
+      <tr>
+        <td>77</td>
+        <td>Soso</td>
+        <td>salamh</td>
+        <td>+22992</td>
+        <td>soso@gmail.com</td>
+        <td>Aqaba,jordan</td>
+        <td>remix66</td>
+        <td class="delete">
+          <span>Delete <i class="fas fa-trash"></i></span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>666</td>
+        <td>khaled</td>
+        <td>salamh</td>
+        <td>+111245</td>
+        <td>jojo@gmail.com</td>
+        <td>none</td>
+        <td>rkljke666</td>
+        <td class="delete">
+          <span>Delete <i class="fas fa-trash"></i></span>
+        </td>
+      </tr>
 
     </table>
-</div>
-
-    <button class="button" onclick="showAdmin()"><i class="fa-solid fa-plus"></i> Add </button>
-
-
-    <fieldset class="add-admin" id="add-admin" >
-
-      <legend>Add Admin</legend>
- 
-    <form action="#" method="post">
-      <div>
-    <label>User Name :</label>
-    <input type="text" placeholder="User Name" name="User Name"><br>
   </div>
-  <div>
-      <label>Phone Number :</label>
-      <input type="tel" placeholder="Phone Number" name="Phone Number"><br>
 
-    </div>
+  <div class="button-container">
 
-    <div>
-      <label>First Name :</label>
-      <input type="text" placeholder="First Name" name="First Name"><br>
-    </div>
+    <button class="btn btn-primary add-button" onclick="showAdmin()"><i class="fa-solid fa-plus"></i> Add </button>
+  </div>
 
-    <div>
-      <label>Password :</label>
-      <input type="password" placeholder="Password" name="Password"><br>
-    </div>
+  <fieldset class="add-admin" id="add-admin">
 
-    <div>
-      <label>Email :</label>
-      <input type="email" placeholder="Email" name="Email"><br>
-    </div>
+    <legend>Add Admin</legend>
 
-    <div>
-        <label>Last Name :</label><br>
-        <input type="text" placeholder="Last Nmae" name="Last Name"><br>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label>User Name :</label>
+        <input class="form-control" type="text" placeholder="User Name" name="User Name">
       </div>
-      <div>
-        <label>Confirm Password :</label><br>
-        <input type="password" placeholder="Confirm Password" name="Confirm Password"><br>
+      <div class="form-group">
+        <label>Phone Number :</label>
+        <input class="form-control" type="tel" placeholder="Phone Number" name="Phone Number">
+
       </div>
 
-      <div>
-        <label>Address :</label><br>
-        <input type="text" placeholder="Address" name="Address"><br>
+      <div class="form-group">
+        <label>First Name :</label>
+        <input class="form-control" type="text" placeholder="First Name" name="First Name">
       </div>
 
-  
+      <div class="form-group">
+        <label>Password :</label>
+        <input class="form-control" type="password" placeholder="Password" name="Password">
+      </div>
+
+      <div class="form-group">
+        <label>Email :</label>
+        <input class="form-control" type="email" placeholder="Email" name="Email">
+      </div>
+
+      <div class="form-group">
+        <label>Last Name :</label>
+        <input class="form-control" type="text" placeholder="Last Nmae" name="Last Name">
+      </div>
+      <div class="form-group">
+        <label>Confirm Password :</label>
+        <input class="form-control" type="password" placeholder="Confirm Password" name="Confirm Password">
+      </div>
+
+      <div class="form-group">
+        <label>Address :</label>
+        <input class="form-control" type="text" placeholder="Address" name="Address">
+      </div>
+
+
       <i class="fa-solid fa-user-gear icon"></i>
 
-      <button class="save-button">
+      <button class=" btn btn-primary save-button">
         <i class="fa-solid fa-download"></i> Save
       </button>
-      
-      <button class="cancel-button">
+
+      <button class="brn btn-secondary cancel-button">
         <i class="fa-solid fa-xmark"></i> Cancel
       </button>
 
 
     </form>
 
-    
-</fieldset>
+
+  </fieldset>
 
 
-<footer> 
-  <a class="contact-a" href="contact.html">Contact us</a>  
-  <a>About us</a>
-  <p>&copy; 2023 BluLogix, LLC. All rights reserved.</p>
-</footer>
+  <footer>
+    <a class="contact-a" href="contact.html">Contact us</a>
+    <a>About us</a>
+    <p>&copy; 2023 BluLogix, LLC. All rights reserved.</p>
+  </footer>
 
 </body>
 
-<script src="https://kit.fontawesome.com/1e4272720a.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 
 </html>
