@@ -15,7 +15,16 @@
 
     <!-- navagation bar  -->
 
-    <nav class="navbar navbar-light bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
 
         <a id= "dashboard-link" href="dashboard.html"><i class="fa-solid fa-gauge" ></i>Dashboard</a>
     
@@ -23,11 +32,15 @@
     
         <a id= "teacher-link" href="teacher.html"><i class="fas fa-chalkboard-teacher"></i>Teacher</a>
       
-        <a href="#student"><i class="fa-solid fa-book-open-reader"></i>Student </a>
+        <a href="student.html"><i class="fa-solid fa-book-open-reader"></i>Student </a>
        
         <a id = "admin-link"href="Admin.html"><i class="fa-solid fa-user-gear"></i>Admin</a>
     
         <a class="logoutbtn" href="index.html"><i class="fas fa-sign-out-alt"></i>Logout</a>
+
+    </div>
+</div>
+</div>
     
     </nav>
        
@@ -35,31 +48,49 @@
     <!-- ------------------------------------------- -->
     <h3 class="title">Dashboard</h3>
     <div class="container">
-      
-    <div class="cards">
-        <i class="fas fa-id-card"></i>
-        <span class="span-name">Full name:</span> 
-        <span>Test Zeyad</span>
-    </div>
-
-    <div class="cards">
-        <i class="fas fa-envelope-open"></i>
-        <span class="span-name" >Email:</span> 
-        <span >root@root.com</span>
-    </div>
-
-    <div class="cards">
-        <i class="fa-solid fa-square-phone"></i>
-        <span class="span-name">Phone Number:</span> 
-        <span>+98727666</span>
-    </div>
-
-    <div class="cards">
-        <i class="fas fa-address-book"></i>
-        <span class="span-name">Address:</span> 
-        <span>Amman-jordan</span>
-    </div>
-
+        <div class="row">
+    
+          <div class="col-md-4">
+            <div class="cards">
+              <i class="fas fa-id-card"></i>
+              <div class="cards-span">
+                <span class="span-name">Full name:</span>
+                <span>Test Zeyad</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="cards">
+              <i class="fas fa-envelope-open"></i>
+              <div class="cards-span">
+                <span class="span-name">Email:</span>
+                <span>root@root.com</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="cards">
+              <i class="fa-solid fa-square-phone"></i>
+              <div class="cards-span">
+                <span class="span-name">Phone Number:</span>
+                <span>+98727666</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="cards">
+              <i class="fas fa-address-book"></i>
+              <div class="cards-span">
+                <span class="span-name">Address:</span>
+                <span>Amman-jordan</span>
+              </div>
+            </div>
+          </div>
+    
+        </div>
       </div>
 
       <footer> 

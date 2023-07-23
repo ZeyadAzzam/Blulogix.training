@@ -42,11 +42,10 @@ body {
 }
 
 .bg-light .logoutbtn {
-  margin: 0 2rem 0 auto;
+  margin: 0 auto 0 15rem;
   background: none;
   color: #f2f2f2;
   cursor: pointer;
-  float: right;
   align-items: center;
 }
 
@@ -95,7 +94,7 @@ body {
 /* containers dashboard edit */
 
 .container .cards {
-  width: 19rem;
+  width: 100%;
   border-top: 3px solid #ee543f;
   border-right: 0.05px solid#cfcfcf;
   border-bottom: 0.05px solid#cfcfcf;
@@ -119,8 +118,13 @@ body {
 
 }
 
+.cards-span {
 
-.cards .span-name {
+  padding: 5px 0 20px 10px;
+}
+
+
+.cards-span .span-name {
 
   color: rgb(9, 105, 105);
 
@@ -164,6 +168,7 @@ td {
 .delete {
 
   text-align: center;
+  cursor: pointer;
 }
 
 .delete span {
@@ -726,6 +731,27 @@ footer p {
 /* Media Screens */
 
 @media only screen and (max-width: 768px) {
+
+  .bg-light a {
+
+    font-size: small;
+    flex-direction: row;
+    width: 50%;
+
+  }
+
+  .navbar-collapse {
+
+    flex-basis: 4;
+    flex-grow: 0;
+    padding-top: 1rem;
+
+  }
+
+  .bg-light a>i {
+    font-size: small;
+
+  }
 
   .bg-light .logoutbtn {
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app ="myApp">
 
 <head>
   <meta charset="UTF-8">
@@ -11,24 +11,38 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
   <script src="https://kit.fontawesome.com/1e4272720a.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
   <link rel="stylesheet" href="pages.css">
 
 </head>
 
-<body>
-  <nav class="navbar navbar-light bg-light">
+<body ng-controller="StudentController">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-    <a id="dashboard-link" href="dashboard.html"><i class="fa-solid fa-gauge"></i>Dashboard</a>
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <a id="parent-link" href="parent.html"><i class="fa-solid fa-people-roof"></i> Parent</a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
 
-    <a id="teacher-link" href="teacher.html"><i class="fas fa-chalkboard-teacher"></i>Teacher</a>
+          <a id="dashboard-link" href="dashboard.html"><i class="fa-solid fa-gauge"></i>Dashboard</a>
 
-    <a href="student.html"><i class="fa-solid fa-book-open-reader"></i>Student </a>
+          <a id="parent-link" href="parent.html"><i class="fa-solid fa-people-roof"></i> Parent</a>
 
-    <a id="admin-link" href="Admin.html"><i class="fa-solid fa-user-gear"></i>Admin</a>
+          <a id="teacher-link" href="teacher.html"><i class="fas fa-chalkboard-teacher"></i>Teacher</a>
 
-    <a class="logoutbtn" href="index.html"><i class="fas fa-sign-out-alt"></i>Logout</a>
+          <a href="student.html"><i class="fa-solid fa-book-open-reader"></i>Student </a>
+
+          <a id="admin-link" href="Admin.html"><i class="fa-solid fa-user-gear"></i>Admin</a>
+
+          <a class="logoutbtn" href="index.html"><i class="fas fa-sign-out-alt"></i>Logout</a>
+
+        </div>
+      </div>
+    </div>
 
   </nav>
 
@@ -100,6 +114,18 @@
 
       </tr>
 
+      <tr ng-repeat="student in students">
+        <td>{{ student.id }}</td>
+        <td>{{ student.firstName }}</td>
+        <td>{{ student.lastName }}</td>
+        <td>{{ student.email }}</td>
+        <td>{{ student.address }}</td>
+        <td>{{ student.phoneNumber }}</td>
+        <td class="delete">
+          <span ng-click="deleteStudent($index)">Delete <i class="fas fa-trash"></i></span>
+        </td>
+      </tr>      
+
     </table>
   </div>
 
@@ -112,31 +138,31 @@
 
     <legend>Add Student</legend>
 
-    <form action="#" method="post">
+    <form  ng-submit="addStudent()">
 
       <div class="form-group">
         <label for="First Name">First Name :</label>
-        <input class="form-control" type="text" placeholder="First Name" name="First Name">
+        <input class="form-control" type="text" placeholder="First Name" name="First Name" ng-model ="firstName">
       </div>
       <div class="form-group">
         <label for="Last Name">Last Name :</label>
-        <input class="form-control" type="text" placeholder="Last Name" name="Last Name">
+        <input class="form-control" type="text" placeholder="Last Name" name="Last Name" ng-model ="lastName">
 
       </div>
 
       <div class="form-group">
         <label for="Email">Email :</label>
-        <input class="form-control" type="email" placeholder="Email" name="Email">
+        <input class="form-control" type="email" placeholder="Email" name="Email" ng-model ="email">
       </div>
 
       <div class="form-group">
         <label for="Address">Address :</label>
-        <input class="form-control" type="text" placeholder="Address" name="Address">
+        <input class="form-control" type="text" placeholder="Address" name="Address" ng-model ="address">
       </div>
 
       <div class="form-group">
         <label for="Phone Number">Phone Number :</label>
-        <input class="form-control" type="tel" placeholder="Phone Number" name="Phone Number">
+        <input class="form-control" type="tel" placeholder="Phone Number" name="Phone Number" ng-model ="phoneNumber">
       </div>
 
 
@@ -164,5 +190,6 @@
   <script src="script.js"></script>
 
 </body>
+
 
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app ="myApp">
 
 <head>
   <meta charset="UTF-8">
@@ -11,27 +11,40 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
   <script src="https://kit.fontawesome.com/1e4272720a.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
   <link rel="stylesheet" href="pages.css">
 
 </head>
 
-<body>
+<body ng-controller="AdminController">
 
-  <nav class="navbar navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-    <a id="dashboard-link" href="dashboard.html"><i class="fa-solid fa-gauge"></i>Dashboard</a>
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <a id="parent-link" href="parent.html"><i class="fa-solid fa-people-roof"></i> Parent</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
 
-    <a id="teacher-link" href="teacher.html"><i class="fas fa-chalkboard-teacher"></i>Teacher</a>
+    <a id= "dashboard-link" href="dashboard.html"><i class="fa-solid fa-gauge" ></i>Dashboard</a>
 
+    <a id= "parent-link" href="parent.html"><i class="fa-solid fa-people-roof"></i> Parent</a>
+
+    <a id= "teacher-link" href="teacher.html"><i class="fas fa-chalkboard-teacher"></i>Teacher</a>
+  
     <a href="student.html"><i class="fa-solid fa-book-open-reader"></i>Student </a>
-
-    <a id="admin-link" href="Admin.html"><i class="fa-solid fa-user-gear"></i>Admin</a>
+   
+    <a id = "admin-link"href="Admin.html"><i class="fa-solid fa-user-gear"></i>Admin</a>
 
     <a class="logoutbtn" href="index.html"><i class="fas fa-sign-out-alt"></i>Logout</a>
 
-  </nav>
+</div>
+</div>
+</div>
+
+</nav>
 
   <div class="table-container">
 
@@ -116,6 +129,19 @@
         </td>
       </tr>
 
+      <tr ng-repeat="admin in admins">
+        <td>{{ admin.id }}</td>
+        <td>{{ admin.firstName }}</td>
+        <td>{{ admin.lastName }}</td>
+        <td>{{ admin.phoneNumber }}</td>
+        <td>{{ admin.email }}</td>
+        <td>{{ admin.address }}</td>
+        <td>{{ admin.userName }}</td>
+        <td class="delete">
+          <span ng-click="deleteAdmin($index)">Delete <i class="fas fa-trash"></i></span>
+        </td>
+      </tr>
+
     </table>
   </div>
 
@@ -128,44 +154,45 @@
 
     <legend>Add Admin</legend>
 
-    <form action="#" method="post">
+    <form ng-submit="addAdmin()">
+      
       <div class="form-group">
         <label>User Name :</label>
-        <input class="form-control" type="text" placeholder="User Name" name="User Name">
+        <input class="form-control" type="text" placeholder="User Name" name="User Name" ng-model="newAdmin.userName">
       </div>
       <div class="form-group">
         <label>Phone Number :</label>
-        <input class="form-control" type="tel" placeholder="Phone Number" name="Phone Number">
+        <input class="form-control" type="tel" placeholder="Phone Number" name="Phone Number" ng-model="newAdmin.phoneNumber">
 
       </div>
 
       <div class="form-group">
         <label>First Name :</label>
-        <input class="form-control" type="text" placeholder="First Name" name="First Name">
+        <input class="form-control" type="text" placeholder="First Name" name="First Name" ng-model ="newAdmin.firstName">
       </div>
 
       <div class="form-group">
         <label>Password :</label>
-        <input class="form-control" type="password" placeholder="Password" name="Password">
+        <input class="form-control" type="password" placeholder="Password" name="Password" ng-model ="newAdmin.password">
       </div>
 
       <div class="form-group">
         <label>Email :</label>
-        <input class="form-control" type="email" placeholder="Email" name="Email">
+        <input class="form-control" type="email" placeholder="Email" name="Email" ng-model ="newAdmin.email">
       </div>
 
       <div class="form-group">
         <label>Last Name :</label>
-        <input class="form-control" type="text" placeholder="Last Nmae" name="Last Name">
+        <input class="form-control" type="text" placeholder="Last Nmae" name="Last Name" ng-model ="newAdmin.lastName">
       </div>
       <div class="form-group">
         <label>Confirm Password :</label>
-        <input class="form-control" type="password" placeholder="Confirm Password" name="Confirm Password">
+        <input class="form-control" type="password" placeholder="Confirm Password" name="Confirm Password" ng-model ="newAdmin.ConfirmPassword">
       </div>
 
       <div class="form-group">
         <label>Address :</label>
-        <input class="form-control" type="text" placeholder="Address" name="Address">
+        <input class="form-control" type="text" placeholder="Address" name="Address" ng-model ="newAdmin.Address">
       </div>
 
 
