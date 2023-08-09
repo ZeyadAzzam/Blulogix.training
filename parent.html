@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app ="myApp">
+<html lang="en" ng-app ="myApp" ng-controller="ParentController">
 
 <head>
   <meta charset="UTF-8">
@@ -11,13 +11,12 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
   <script src="https://kit.fontawesome.com/1e4272720a.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
   <link rel="stylesheet" href="pages.css">
 
 
 </head>
 
-<body ng-controller="ParentController">
+<body >
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
@@ -105,13 +104,16 @@
     </tr>
 
     <tr ng-repeat="parent in parents">
-      <td>{{ parent.id }}</td>
+      <td>{{ parent.Id }}</td>
       <td>{{ parent.firstName }}</td>
       <td>{{ parent.lastName }}</td>
       <td>{{ parent.phoneNumber }}</td>
-      <td>{{ parent.address }}</td>
+      <td>{{ parent.Address }}</td>
       <td class="delete">
         <span ng-click="deleteParent($index)">Delete <i class="fas fa-trash"></i></span>
+      </td>
+    </tr>
+    
       </td>
     </tr>
 
@@ -126,7 +128,7 @@
   <fieldset class="add-parent" id="add-parent">
     <legend>Add parent</legend>
 
-    <form  ng-submit="addParent()">
+    <form  method="post"  ng-submit="addParent()">
       <div class="form-group">
         <label for="firstName">First Name:</label>
         <input class="form-control" type="text" placeholder="First Name" id="firstName" name="firstName" ng-model="firstName">
@@ -165,7 +167,7 @@
     <p>&copy; 2023 BluLogix, LLC. All rights reserved.</p>
   </footer>
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
   <script src="script.js"></script>
 
 

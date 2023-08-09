@@ -130,13 +130,13 @@
       </tr>
 
       <tr ng-repeat="admin in admins">
-        <td>{{ admin.id }}</td>
-        <td>{{ admin.firstName }}</td>
-        <td>{{ admin.lastName }}</td>
-        <td>{{ admin.phoneNumber }}</td>
-        <td>{{ admin.email }}</td>
-        <td>{{ admin.address }}</td>
-        <td>{{ admin.userName }}</td>
+        <td>{{ admin.Id }}</td>
+        <td>{{ admin.First_Name }}</td>
+        <td>{{ admin.Last_Name }}</td>
+        <td>{{ admin.Phone_Number }}</td>
+        <td>{{ admin.Email }}</td>
+        <td>{{ admin.Address }}</td>
+        <td>{{ admin.User_Name }}</td>
         <td class="delete">
           <span ng-click="deleteAdmin($index)">Delete <i class="fas fa-trash"></i></span>
         </td>
@@ -155,7 +155,6 @@
     <legend>Add Admin</legend>
 
     <form ng-submit="addAdmin()">
-      
       <div class="form-group">
         <label>User Name :</label>
         <input class="form-control" type="text" placeholder="User Name" name="User Name" ng-model="newAdmin.userName">
