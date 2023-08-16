@@ -198,6 +198,16 @@ function showAdmin() {
       function(response) {
         fetchAdmin();
         console.log('Admin added successfully!');
+        $scope.newAdmin.firstName = '';
+        $scope.newAdmin.lastName = '';
+        $scope.newAdmin.phoneNumber = '';
+        $scope.newAdmin.email = '';
+        $scope.newAdmin.Address = '';
+        $scope.newAdmin.userName='';
+        $scope.newAdmin.password = '';
+        $scope.newAdmin.confirmPassword='';
+
+
       },
       function(error) {
         console.error('Error adding admin:', error);
